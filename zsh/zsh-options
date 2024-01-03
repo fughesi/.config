@@ -1,0 +1,9 @@
+#! /bin/zsh
+#  VARIABLES
+
+# beeping is annoying
+unsetopt BEEP
+
+# case sensitivity = off
+unsetopt CASE_GLOB
+
