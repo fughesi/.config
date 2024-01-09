@@ -85,3 +85,7 @@ export BROWSER="brave"
 
 # For QT Themes
 export QT_QPA_PLATFORMTHEME=qt5ct
+
+
+# start neofetch sysinfo upon entering zsh
+neofetch
