@@ -10,6 +10,9 @@ vim.g.mapleader = " "
 local keymap = vim.keymap
 local opts = { noremap = true }
 
+-- remap q to turn off recording feature
+keymap.set("n", "q", "")
+
 -- center vertically in insert mode
 keymap.set("i", "zz", "<ESC>zzi")
 

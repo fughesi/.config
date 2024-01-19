@@ -94,6 +94,16 @@ return {
       on_attach = on_attach,
     }
 
+    -- configure ESLint
+    -- lspconfig["eslint"].setup {
+    --   on_attach = function(_, bufnr)
+    --     vim.api.nvim_create_autocmd("BufWritePre", {
+    --       buffer = bufnr,
+    --       command = "EslintFixAll",
+    --     })
+    --   end,
+    -- }
+
     -- configure bash server
     lspconfig["bashls"].setup {
       capabilities = capabilities,
@@ -116,6 +126,13 @@ return {
           end,
         })
       end,
+    }
+
+    -- configure php servers
+    lspconfig["intelephense"].setup {
+      capabilities = capabilities,
+      on_attach = on_attach,
+      filetypes = { "php" },
     }
 
     -- configure prisma orm server
