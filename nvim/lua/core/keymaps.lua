@@ -31,8 +31,8 @@ keymap.set("n", "<leader><Left>", "zH")
 keymap.set("n", "<C-s>", ":w<CR>")
 keymap.set("i", "<C-s>", "<ESC>:w<CR>i")
 
--- use kj to exit insert mode
-keymap.set("i", "kj", "<ESC>")
+-- exit insert mode
+keymap.set("i", "jh", "<ESC>")
 
 -- clear search highlights
 keymap.set("n", "<leader>nh", ":nohl<CR>")

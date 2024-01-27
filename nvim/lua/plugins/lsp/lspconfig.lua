@@ -14,25 +14,34 @@ return {
 
     local keymap = vim.keymap
 
-    local opts = { noremap = true, silent = true, desc = "" }
-
-    local on_attach = function(_, bufnr)
-      opts.buffer = bufnr
-
-      -- set keybinds
-      keymap.set("n", "gD", vim.lsp.buf.declaration, opts, { desc = "Go to declaration" })
-
-      keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, opts, { desc = "See available code actions" })
-
-      keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts, { desc = "Smart rename" })
-
-      keymap.set("n", "<leader>d", vim.diagnostic.open_float, opts, { desc = "Show line diagnostics" })
-
-      keymap.set("n", "[d", vim.diagnostic.goto_prev, opts, { desc = "Go to previous diagnostic" })
-
-      keymap.set("n", "]d", vim.diagnostic.goto_next, opts, { desc = "Go to next diagnostic" })
-
-      keymap.set("n", "K", vim.lsp.buf.hover, opts, { desc = "Show documentation under cursor" })
+    local on_attach = function() -- set keybinds
+      keymap.set("n", "gD", vim.lsp.buf.declaration, { desc = "Go to declaration", noremap = true, silent = true })
+      keymap.set("n", "<leader>rn", vim.lsp.buf.rename, { desc = "Smart rename", noremap = true, silent = true })
+      keymap.set("n", "]d", vim.diagnostic.goto_next, { desc = "Go to next diagnostic", noremap = true, silent = true })
+      keymap.set(
+        { "n", "v" },
+        "<leader>ca",
+        vim.lsp.buf.code_action,
+        { desc = "See available code actions", noremap = true, silent = true }
+      )
+      keymap.set(
+        "n",
+        "<leader>d",
+        vim.diagnostic.open_float,
+        { desc = "Show line diagnostics", noremap = true, silent = true }
+      )
+      keymap.set(
+        "n",
+        "[d",
+        vim.diagnostic.goto_prev,
+        { desc = "Go to previous diagnostic", noremap = true, silent = true }
+      )
+      keymap.set(
+        "n",
+        "K",
+        vim.lsp.buf.hover,
+        { desc = "Show documentation under cursor", noremap = true, silent = true }
+      )
     end
 
     -- used to enable autocompletion (assign to every lsp server config)
@@ -73,8 +82,8 @@ return {
     -- configure svelte server
     lspconfig["svelte"].setup {
       capabilities = capabilities,
-      on_attach = function(client, bufnr)
-        on_attach(client, bufnr)
+      on_attach = function(client)
+        on_attach()
 
         vim.api.nvim_create_autocmd("BufWritePost", {
           pattern = { "*.js", "*.ts" },
@@ -87,13 +96,13 @@ return {
       end,
     }
 
-    -- configure php servers
-    -- lspconfig["intelephense"].setup {
-    --   capabilities = capabilities,
-    --   on_attach = on_attach,
-    --   filetypes = { "php" },
-    --   },
-    -- }
+    -- configure php server
+    lspconfig["intelephense"].setup {
+      cmd = { "intelephense", "--stdio" },
+      capabilities = capabilities,
+      on_attach = on_attach,
+      filetypes = { "php" },
+    }
 
     -- configure prisma orm server
     lspconfig["prismals"].setup {
