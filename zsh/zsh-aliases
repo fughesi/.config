@@ -55,7 +55,6 @@ fi
 
 case "$(uname -s)" in
 
-
 Darwin)
 	# echo 'Mac OS X'
 	alias l='lsd -alh'

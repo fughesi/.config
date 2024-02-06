@@ -52,8 +52,8 @@ zsh_add_completion "zsh-users/zsh-completions"
 bindkey -s '^o' 'ranger^M'
 bindkey -s '^f' 'zi^M'
 bindkey -s '^s' 'ncdu^M'
- bindkey -s '^n' 'nvim $(fzf)^M'
- bindkey -s '^v' 'nvim\n'
+bindkey -s '^n' 'nvim $(fzf)^M'
+bindkey -s '^v' 'nvim\n'
 bindkey -s '^z' 'zi^M'
 bindkey '^[[P' delete-char
 bindkey "^p" up-line-or-beginning-search # Up
@@ -80,6 +80,7 @@ autoload edit-command-line; zle -N edit-command-line
 
 # Environment variables set everywhere
 export EDITOR="nvim"
+export TERMINAL="alacritty"
 export BROWSER="brave"
 
 # For QT Themes
