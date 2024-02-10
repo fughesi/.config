@@ -1,7 +1,7 @@
 return {
   {
     "nvim-treesitter/nvim-treesitter",
-    event = { "BufReadPre", "BufNewFile" },
+    -- event = { "BufReadPre", "BufNewFile" },
     build = ":TSUpdate",
     dependencies = {
       "nvim-treesitter/nvim-treesitter-textobjects",
@@ -23,26 +23,9 @@ return {
           enable = true,
         },
         -- ensure these language parsers are installed
-        ensure_installed = {
-          "json",
-          "javascript",
-          "typescript",
-          "tsx",
-          "yaml",
-          "html",
-          "css",
-          "prisma",
-          "markdown",
-          "markdown_inline",
-          "svelte",
-          "graphql",
-          "bash",
-          "lua",
-          "vim",
-          "dockerfile",
-          "gitignore",
-          "query",
-          "rust",
+        auto_install = true,
+        lang_to_ext = {
+          json = "json",
         },
         incremental_selection = {
           enable = true,

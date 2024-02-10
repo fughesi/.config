@@ -1,6 +1,6 @@
 return {
   "neovim/nvim-lspconfig",
-  event = { "BufReadPre", "BufNewFile" },
+  -- event = { "BufReadPre", "BufNewFile" },
   dependencies = {
     "hrsh7th/cmp-nvim-lsp",
     { "antosha417/nvim-lsp-file-operations", config = true },
@@ -63,7 +63,6 @@ return {
     local capabilities = cmp_nvim_lsp.default_capabilities()
 
     -- Change the Diagnostic symbols in the sign column (gutter)
-    -- (not in youtube nvim video)
     local signs = { Error = " ", Warn = " ", Hint = "󰠠 ", Info = " " }
     for type, icon in pairs(signs) do
       local hl = "DiagnosticSign" .. type
@@ -99,6 +98,12 @@ return {
       capabilities = capabilities,
       on_attach = on_attach,
       filetypes = { "sh", "zsh", "fish", "bash" },
+    }
+
+    -- configure php server
+    lspconfig["intelephense"].setup {
+      capabilities = capabilities,
+      on_attach = on_attach,
     }
 
     -- configure svelte server
@@ -144,14 +149,10 @@ return {
       on_attach = on_attach,
     }
 
-    require("lspconfig").rust_analyzer.setup {
-      settings = {
-        ["rust-analyzer"] = {
-          diagnostics = {
-            enable = false,
-          },
-        },
-      },
+    -- configure rust server
+    lspconfig["rust_analyzer"].setup {
+      capabilities = capabilities,
+      on_attach = on_attach,
     }
 
     -- configure lua server (with special settings)

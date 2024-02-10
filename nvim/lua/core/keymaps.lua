@@ -28,7 +28,7 @@ keymap.set("n", "<leader><Left>", "zH")
 keymap.set("n", "<C-s>", ":w<CR>")
 keymap.set("i", "<C-s>", "<ESC>:w<CR>i")
 
--- use kj to exit insert mode
+--  exit insert mode
 keymap.set("i", "kj", "<ESC>")
 
 -- clear search highlights
@@ -42,8 +42,8 @@ keymap.set("n", "mu", ":m .-2<CR>")
 keymap.set("n", "md", ":m .+1<CR>")
 
 -- increment/decrement numbers
-keymap.set("n", "<leader>+", "<C-a>") -- increment
-keymap.set("n", "<leader>-", "<C-x>") -- decrement
+keymap.set("n", "+", "<C-a>") -- increment
+keymap.set("n", "-", "<C-x>") -- decrement
 
 -- restart lsp server
 keymap.set("n", "<leader>rs", ":LspRestart<CR>") -- mapping to restart lsp if necessary
