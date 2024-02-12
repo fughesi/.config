@@ -6,22 +6,51 @@ colorscheme habamax
 
 call plug#begin('~/.config/vim/plugins')
   Plug 'junegunn/goyo.vim'
+  Plug 'junegunn/fzf'
   Plug 'tpope/vim-surround'
   Plug 'PotatoesMaster/i3-vim-syntax'
   Plug 'jreybert/vimagit'
-  Plug 'LukeSmithxyz/vimling'
   Plug 'terryma/vim-multiple-cursors'
-  Plug 'prabirshrestha/vim-lsp'
-  Plug 'mattn/vim-lsp-settings'
-  Plug 'github/copilot.vim'
-  Plug 'prabirshrestha/asyncomplete.vim'
-  Plug 'prabirshrestha/asyncomplete-lsp.vim'
+  Plug 'neoclide/coc.nvim'
+  Plug 'tomtom/tcomment_vim'
+  Plug 'christoomey/vim-tmux-navigator'
 call plug#end()
+
+
+
+" coc config ===========
+let g:coc_global_extensions = [
+      \ 'coc-snippets',
+      \ 'coc-pairs',
+      \ 'coc-tsserver',
+      \ 'coc-eslint',
+      \ 'coc-prettier',
+      \ 'coc-json',
+      \]
+
+let g:coc_node_path = '/usr/local/bin/node'
+
+inoremap <silent><expr> <TAB>
+      \ coc#pum#visible() ? coc#_select_confirm() :
+      \ coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :
+      \ CheckBackspace() ? "\<TAB>" :
+      \ coc#refresh()
+
+function! CheckBackspace() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1] =~# '\s'
+endfunction
+
+let g:coc_snippet_next = '<tab>'
+" coc config ===========
+
 
 
 " buffers and splits
 set splitbelow splitright
 set hidden
+filetype plugin on
+filetype indent on
 
 " blocky cursor
 let &t_SI = "\<esc>[6 q" 
@@ -38,17 +67,15 @@ set ruler
 set wildmode=longest,list,full
 set wildmenu
 set confirm
-
+set clipboard=unnamed,unnamedplus
 
 " Enable mouse mode
 set mouse="a"
 
-" Enable break indent
-set breakindent
-
 " Save undo history
 set undofile
 set history=1000
+set noswapfile
 
 " Decrease update time
 set updatetime=250
@@ -58,11 +85,12 @@ set timeoutlen=300
 set number relativenumber
 
 " tabs & indentation
-set tabstop=2 " 2 spaces for tabs (prettier default)
-set shiftwidth=2 " 2 spaces for indent width
-set expandtab " expand tab to spaces
-set autoindent " copy indent from current line when starting new one
-set textwidth=80 " wrap lines larger than 80 chars
+set tabstop=2 
+set shiftwidth=2 
+set expandtab
+set autoindent 
+set breakindent
+set textwidth=80 
 
 " search settings
 set ignorecase
@@ -72,20 +100,19 @@ set smartcase
 syntax on
 set wrap
 set cursorline
-set nohlsearch
 set autoindent
-set autoindent
+set scrolloff=999
 
 " misc
+set termguicolors
+set autoread
 set backspace=indent,eol,start
 set incsearch
 set nocompatible
 set noerrorbells
 set visualbell
 set ttyfast
-
-
-
+let g:netrw_list_hide='.*\.swp$,\~$,\.orig$'
 
 
 
@@ -110,7 +137,7 @@ inoremap <C-s> <Esc>:w<CR>i
 " exit insert mode
 inoremap kj <Esc>
 
-" move text up and down
+" move line up and down
 nnoremap mu :m .-2<CR>
 nnoremap md :m .+1<CR>
 
@@ -119,48 +146,23 @@ nnoremap + <C-a>
 nnoremap - <C-x>
 
 " window management
-nnoremap qw :Explore<CR> #toggle explorer
+nnoremap qw :Explore<CR> 
 
-nnoremap <leader>to :tabnew<CR> #open new tab
-nnoremap <leader>tx :close<CR> #close current tab
-nnoremap <S-t> :tabn<CR> #go to next tab
+nnoremap <leader>to :tabnew<CR>
+nnoremap <leader>tx :close<CR>
+nnoremap <S-t> :tabn<CR>
 
-nnoremap <S-b> :bnext<CR> #next buffeB
-nnoremap bd :bd<CR> #delete current buffer
-nnoremap dab :%bdelete<CR> #delete all buffers
+nnoremap <S-b> :bnext<CR>
+nnoremap bd :bd<CR>
+nnoremap dab :%bdelete<CR> 
+
+" Tmux navigation
+nnoremap <silent> <c-h> :<C-U>TmuxNavigateLeft<cr>
+nnoremap <silent> <c-j> :<C-U>TmuxNavigateDown<cr>
+nnoremap <silent> <c-k> :<C-U>TmuxNavigateUp<cr>
+nnoremap <silent> <c-l> :<C-U>TmuxNavigateRight<cr>
+nnoremap <silent> <c-\> :<C-U>TmuxNavigatePrevious<cr>
 
 " Plugin specific
 nnoremap <leader>f :Goyo<CR>
-
-
-
-
-
-
-filetype plugin on
-inoremap <leader><leader> <Esc>/++++<CR>"_c4l
-
-
-autocmd FileType html nnoremap <leader>/ mqA--><Esc>I<!--<Esc>"q
-
-autocmd FileType html inoremap ;i <em></em><Space>++++<Esc>F>%i
-autocmd FileType html inoremap ;b <strong></strong><Space>++++<Esc>F>%i
-autocmd FileType html inoremap ;1 <h1></h1><Space>++++<Esc>F>%i
-autocmd FileType html inoremap ;2 <h2></h2><Space>++++<Esc>F>%i
-autocmd FileType html inoremap ;3 <h3></h3><Space>++++<Esc>F>%i
-autocmd FileType html inoremap ;4 <h4></h4><Space>++++<Esc>F>%i
-autocmd FileType html inoremap ;5 <h5></h5><Space>++++<Esc>F>%i
-autocmd FileType html inoremap ;6 <h6></h6><Space>++++<Esc>F>%i
-
-autocmd FileType html inoremap ;f <form action="" method="GET"></form><Space>++++<Esc>F>%i
-autocmd FileType html inoremap ;n <input type="text" name="" value="" /><Esc>Fm4li
-autocmd FileType html inoremap ;c <button></button><Space>++++<Esc>F>%i
-autocmd FileType html inoremap ;sp <span></span><Space>++++<Esc>F>%i
-autocmd FileType html inoremap ;p <p></p><Space>++++<Esc>F>%i
-autocmd FileType html inoremap ;d <div></div><Space>++++<Esc>F>%i
-autocmd FileType html inoremap ;se <section></section><Space>++++<Esc>F>%i
-
-
-
-
-
+nnoremap ;f :FZF -e<CR>
