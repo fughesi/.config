@@ -16,6 +16,9 @@
     "coc-sql": ">=0.11.0",
     "coc-fzf-preview": ">=2.16.6",
     "coc-sh": ">=1.2.2",
-    "coc-pyright": ">=1.1.348"
-  }
+    "coc-pyright": ">=1.1.348",
+    "coc-phpls": ">=2.2.4",
+    "coc-diagnostic": ">=0.24.1"
+  },
+  "lastUpdate": 1708073287477
 }

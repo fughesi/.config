@@ -1,10 +1,8 @@
-let mapleader=" "
-
 stopi
 colorscheme habamax 
 
 
-call plug#begin('~/.config/vim/plugins')
+call plug#begin('$HOME/.config/vim/plugins')
   Plug 'junegunn/goyo.vim'
   Plug 'junegunn/fzf'
   Plug 'tpope/vim-surround'
@@ -17,18 +15,10 @@ call plug#begin('~/.config/vim/plugins')
 call plug#end()
 
 
-
 " coc config ===========
-let g:coc_global_extensions = [
-      \ 'coc-snippets',
-      \ 'coc-pairs',
-      \ 'coc-tsserver',
-      \ 'coc-eslint',
-      \ 'coc-prettier',
-      \ 'coc-json',
-      \]
-
+let g:coc_snippet_next = '<tab>'
 let g:coc_node_path = '/usr/local/bin/node'
+command! -nargs=0 Prettier :CocCommand prettier.forceFormatDocument
 
 inoremap <silent><expr> <TAB>
       \ coc#pum#visible() ? coc#_select_confirm() :
@@ -41,7 +31,13 @@ function! CheckBackspace() abort
   return !col || getline('.')[col - 1] =~# '\s'
 endfunction
 
-let g:coc_snippet_next = '<tab>'
+function! ShowDocumentation()
+  if CocAction('hasProvider', 'hover')
+    call CocActionAsync('doHover')
+  else
+    call feedkeys('K', 'in')
+  endif
+endfunction
 " coc config ===========
 
 
@@ -68,6 +64,8 @@ set wildmode=longest,list,full
 set wildmenu
 set confirm
 set clipboard=unnamed,unnamedplus
+set nobackup
+set nowritebackup
 
 " Enable mouse mode
 set mouse="a"
@@ -102,6 +100,7 @@ set wrap
 set cursorline
 set autoindent
 set scrolloff=999
+set encoding=utf-8
 
 " misc
 set termguicolors
@@ -112,6 +111,8 @@ set nocompatible
 set noerrorbells
 set visualbell
 set ttyfast
+set signcolumn=yes
+set updatetime=300
 let g:netrw_list_hide='.*\.swp$,\~$,\.orig$'
 
 
@@ -124,11 +125,11 @@ inoremap <C-d> <esc>0i
 inoremap <C-f> <esc>$a
 
 " scroll whole page left/right
-nnoremap <leader><Right> zL
-nnoremap <leader><Left> zH
+nnoremap <space><Right> zL
+nnoremap <space><Left> zH
 
 " spellcheck
-nnoremap <leader>o :setlocal spell! spelllang=en_us<CR>
+nnoremap <space>o :setlocal spell! spelllang=en_us<CR>
 
 " save file
 nnoremap <C-s> :w<CR>
@@ -148,8 +149,8 @@ nnoremap - <C-x>
 " window management
 nnoremap qw :Explore<CR> 
 
-nnoremap <leader>to :tabnew<CR>
-nnoremap <leader>tx :close<CR>
+nnoremap <space>to :tabnew<CR>
+nnoremap <space>tx :close<CR>
 nnoremap <S-t> :tabn<CR>
 
 nnoremap <S-b> :bnext<CR>
@@ -164,5 +165,14 @@ nnoremap <silent> <c-l> :<C-U>TmuxNavigateRight<cr>
 nnoremap <silent> <c-\> :<C-U>TmuxNavigatePrevious<cr>
 
 " Plugin specific
-nnoremap <leader>f :Goyo<CR>
+nnoremap <space>f :Goyo<CR>
 nnoremap ;f :FZF -e<CR>
+nnoremap <silent> ;g <Plug>(coc-diagnostic-next)
+nnoremap <silent> gd <Plug>(coc-definition)
+nnoremap <silent> gy <Plug>(coc-type-definition)
+nnoremap <silent> gi <Plug>(coc-implementation)
+nnoremap <silent> gr <Plug>(coc-references)
+nnoremap <space>rn <Plug>(coc-rename)
+nnoremap <silent> <space>d :call CocActionAsync('doHover')<cr>
+
+
