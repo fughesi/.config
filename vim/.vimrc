@@ -1,4 +1,3 @@
-stopi
 colorscheme habamax 
 
 
@@ -49,12 +48,11 @@ filetype plugin on
 filetype indent on
 
 " blocky cursor
-let &t_SI = "\<esc>[6 q" 
-let &t_SR= "\<esc>[4 q" 
-let &t_EI = "\<esc>[ q" 
+autocmd BufReadPre * let &t_SI = "\<esc>[6 q" 
+autocmd BufReadPre * let &t_SR= "\<esc>[4 q" 
+autocmd BufReadPre * let &t_EI = "\<esc>[ q" 
 
 " command
-set laststatus=2
 set report=0
 set laststatus=2
 set showmode
@@ -64,14 +62,20 @@ set wildmode=longest,list,full
 set wildmenu
 set confirm
 set clipboard=unnamed,unnamedplus
-set nobackup
-set nowritebackup
+
+" status line
+set statusline=File:\ %F
+set statusline+=%=
+set statusline+=Line#%l\,
+set statusline+=\ Column#%c\, 
+set statusline+=\ %p/100
 
 " Enable mouse mode
 set mouse="a"
 
 " Save undo history
 set undofile
+set undodir=~/.config/vim/backups
 set history=1000
 set noswapfile
 
@@ -86,13 +90,13 @@ set number relativenumber
 set tabstop=2 
 set shiftwidth=2 
 set expandtab
-set autoindent 
 set breakindent
 set textwidth=80 
 
 " search settings
-set ignorecase
 set smartcase
+set incsearch
+set hlsearch
 
 " cursor line and body
 syntax on
@@ -106,15 +110,12 @@ set encoding=utf-8
 set termguicolors
 set autoread
 set backspace=indent,eol,start
-set incsearch
 set nocompatible
 set noerrorbells
 set visualbell
 set ttyfast
 set signcolumn=yes
-set updatetime=300
 let g:netrw_list_hide='.*\.swp$,\~$,\.orig$'
-
 
 
 " center vertically in insert mode
@@ -128,12 +129,16 @@ inoremap <C-f> <esc>$a
 nnoremap <space><Right> zL
 nnoremap <space><Left> zH
 
+" turn off highlight w/ spacebar
+nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
+
 " spellcheck
 nnoremap <space>o :setlocal spell! spelllang=en_us<CR>
 
 " save file
 nnoremap <C-s> :w<CR>
 inoremap <C-s> <Esc>:w<CR>i
+nnoremap x "_x
 
 " exit insert mode
 inoremap kj <Esc>
