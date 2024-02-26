@@ -1,7 +1,7 @@
 colorscheme habamax 
 
 
-call plug#begin('$HOME/.config/vim/plugins')
+call plug#begin('~/.config/vim/plugins')
   Plug 'junegunn/goyo.vim'
   Plug 'junegunn/fzf'
   Plug 'tpope/vim-surround'
@@ -11,10 +11,12 @@ call plug#begin('$HOME/.config/vim/plugins')
   Plug 'neoclide/coc.nvim'
   Plug 'tomtom/tcomment_vim'
   Plug 'christoomey/vim-tmux-navigator'
+  Plug 'rust-lang/rust.vim'
 call plug#end()
 
 
 " coc config ===========
+let g:rustfmt_autosave = 1
 let g:coc_snippet_next = '<tab>'
 let g:coc_node_path = '/usr/local/bin/node'
 command! -nargs=0 Prettier :CocCommand prettier.forceFormatDocument
@@ -42,10 +44,9 @@ endfunction
 
 
 " buffers and splits
+filetype plugin indent on
 set splitbelow splitright
 set hidden
-filetype plugin on
-filetype indent on
 
 " blocky cursor
 autocmd BufReadPre * let &t_SI = "\<esc>[6 q" 
@@ -99,7 +100,8 @@ set incsearch
 set hlsearch
 
 " cursor line and body
-syntax on
+syntax on 
+syntax enable
 set wrap
 set cursorline
 set autoindent
@@ -178,6 +180,6 @@ nnoremap <silent> gy <Plug>(coc-type-definition)
 nnoremap <silent> gi <Plug>(coc-implementation)
 nnoremap <silent> gr <Plug>(coc-references)
 nnoremap <space>rn <Plug>(coc-rename)
-nnoremap <silent> <space>d :call CocActionAsync('doHover')<cr>
+nnoremap <silent> <space>k :call CocActionAsync('doHover')<cr>
 
 

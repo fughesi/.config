@@ -19,15 +19,13 @@
 
 
 
-HISTFILE="$XDG_DATA_HOME"/zsh/history
+HISTFILE=~/.zsh_history
 HISTSIZE=100000
 SAVEHIST=100000
 export PATH="$HOME/.local/bin":$PATH
 export PATH=$HOME/.cargo/bin:$PATH
 export PATH="$HOME/.local/share/neovim/bin":$PATH
 
-export MANPAGER='nvim +Man!'
-export MANWIDTH=999
 export semester=$HOME/Documents/School/Spring_24/
 export php=$HOME/Documents/School/Spring_24/web\ programming/XAMPP/htdocs/
 export website=$HOME/Documents/School/Spring_24/web\ creation/website
@@ -40,5 +38,5 @@ export XAMPP_HOME=/Applications/XAMPP
 export PATH=${XAMPP_HOME}/bin:${PATH}
 export PATH
 
-
-eval "$(zoxide init zsh)"
+export EDITOR="vim"
+export BROWSER="brave"

@@ -1,8 +1,16 @@
 #! /bin/zsh
 
+
 # no beeping
 unsetopt BEEP
 
 # case sensitivity = off
 unsetopt CASE_GLOB
+
+# history file
+setopt appendhistory
+
+# some useful options
+# setopt autocd extendedglob nomatch menu_complete
+# setopt interactive_comments
 

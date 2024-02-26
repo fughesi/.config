@@ -13,8 +13,8 @@ alias mv='mv -i'
 alias rm='rm -i'
 
 # easier to read disk
-alias df='df -h'     # human-readable sizes
-alias free='free -m' # show sizes in MB
+alias df='df -h'
+alias free='free -m'
 
 # get top process eating memory
 alias psmem='ps aux | sort -nr -k 4 | head -5'
@@ -39,4 +39,5 @@ alias gac='git add . && git commit -m'
 # general
 alias f='zi'
 alias l='lsd -alh'
-alias fzf='fzf -e --preview="cat {}"'
+alias fzf='fzf -e --preview="bat --color=always {}" --preview-window "~3"'
+
