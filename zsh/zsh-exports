@@ -1,43 +1,42 @@
 #!/bin/sh
 
-HISTFILE="$XDG_DATA_HOME"/zsh/history
-HISTSIZE=1000000
-SAVEHIST=1000000
+
+# current path list for $PATH variable -- in case of reset
+# /Users/stevencamillieri/.miniconda/bin:/Applications/XAMPP/bin:/Users/stevencamillieri/.local/share/neovim:/Us
+# ers/stevencamillieri/.local/share/neovim/bin:/Users/stevencamillieri/.local/share/go/bin:/Users/stevencamillie
+# ri/.cargo/bin:/Users/stevencamillieri/.local/bin:/Users/stevencamillieri/.local/share/nvim/mason/bin:/Users/st
+# evencamillieri/.miniconda/bin:/Applications/XAMPP/bin:/Users/stevencamillieri/.local/share/neovim:/Users/steve
+# ncamillieri/.local/share/neovim/bin:/Users/stevencamillieri/.local/share/go/bin:/Users/stevencamillieri/.cargo
+# /bin:/Users/stevencamillieri/.local/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/
+# sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cry
+# ptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinte
+# rnal/bin:/Library/Apple/usr/bin:/Applications/Wireshark.app/Contents/MacOS:/usr/local/share/dotnet:~/.dotnet/t
+# ools:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/stevencamillieri/.miniconda/bin:/Appl
+# ications/XAMPP/bin:/Users/stevencamillieri/.local/share/neovim:/Users/stevencamillieri/.local/share/neovim/bin
+# :/Users/stevencamillieri/.local/share/go/bin:/Users/stevencamillieri/.cargo/bin:/Users/stevencamillieri/.local
+# /bin
+
+
+
+
+HISTFILE=~/.zsh_history
+HISTSIZE=100000
+SAVEHIST=100000
 export PATH="$HOME/.local/bin":$PATH
 export PATH=$HOME/.cargo/bin:$PATH
-export PATH=$HOME/.local/share/go/bin:$PATH
-export GOPATH=$HOME/.local/share/go
 export PATH="$HOME/.local/share/neovim/bin":$PATH
 
-export MANPAGER='nvim +Man!'
-export MANWIDTH=999
 export semester=$HOME/Documents/School/Spring_24/
 export php=$HOME/Documents/School/Spring_24/web\ programming/XAMPP/htdocs/
 export website=$HOME/Documents/School/Spring_24/web\ creation/website
+export vim=$HOME/.config/vim
+export nvim=$HOME/.config/nvim
+export zsh=$HOME/.config/zsh
 
 
 export XAMPP_HOME=/Applications/XAMPP
 export PATH=${XAMPP_HOME}/bin:${PATH}
 export PATH
 
-
-
-
-eval "$(zoxide init zsh)"
-
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$("$HOME/.miniconda/bin/conda" 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "$HOME/.miniconda/etc/profile.d/conda.sh" ]; then
-        . "$HOME/.miniconda/etc/profile.d/conda.sh"
-    else
-        export PATH="$HOME/.miniconda/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
+export EDITOR="vim"
+export BROWSER="brave"

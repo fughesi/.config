@@ -2,7 +2,6 @@ local opt = vim.opt -- local variable for lua
 
 -- autosave for rust
 vim.g.rustfmt_autosave = 1
-vim.lsp.buf.format()
 
 -- Set highlight on search
 opt.hlsearch = false
