@@ -25,18 +25,19 @@ SAVEHIST=100000
 export PATH="$HOME/.local/bin":$PATH
 export PATH=$HOME/.cargo/bin:$PATH
 export PATH="$HOME/.local/share/neovim/bin":$PATH
+export PATH="/usr/local/mysql-8.0.31-macos12-x86_64/bin":$PATH
 
-export semester=$HOME/Documents/School/Spring_24/
+export semester=$HOME/Documents/School/Summer_24
 export php=$HOME/Documents/School/Spring_24/web\ programming/XAMPP/htdocs/
-export website=$HOME/Documents/School/Spring_24/web\ creation/website
+export website=$HOME/Sites/bloominggeckos
 export vim=$HOME/.config/vim
 export nvim=$HOME/.config/nvim
 export zsh=$HOME/.config/zsh
 
 
-export XAMPP_HOME=/Applications/XAMPP
-export PATH=${XAMPP_HOME}/bin:${PATH}
-export PATH
+# export XAMPP_HOME=/Applications/XAMPP
+# export PATH=${XAMPP_HOME}/bin:${PATH}
+# export PATH
 
 export EDITOR="vim"
 export BROWSER="brave"

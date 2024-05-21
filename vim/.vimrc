@@ -162,7 +162,7 @@ nnoremap <S-t> :tabn<CR>
 
 nnoremap <S-b> :bnext<CR>
 nnoremap bd :bd<CR>
-nnoremap dab :%bdelete<CR> 
+nnoremap bad :%bdelete<CR> 
 
 " Tmux navigation
 nnoremap <silent> <c-h> :<C-U>TmuxNavigateLeft<cr>
