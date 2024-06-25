@@ -121,6 +121,9 @@ set noerrorbells
 set visualbell
 set ttyfast
 set signcolumn=yes
+let g:netrw_list_hide='.*\.swp$,\~$,\.orig$'
+
+
 
 " move to beginning or end of line
 inoremap <C-d> <esc>0i

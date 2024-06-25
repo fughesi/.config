@@ -1,7 +1,10 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://json.schemastore.org/partial-eslint-plugins.json",
+<<<<<<< HEAD
   "$comment": "For improvements to this schema, please send a PR to https://github.com/fox-projects/jsonschema-extractor.",
+=======
+>>>>>>> refs/remotes/origin/main
   "type": "object",
   "definitions": {
     "ruleNumber": {
@@ -21,6 +24,7 @@
         "anyOf": [
           {
             "enum": [
+<<<<<<< HEAD
               "eslint-plugin-jest",
               "eslint-plugin-n",
               "eslint-plugin-jsx-a11y",
@@ -87,6 +91,75 @@
               "eslint-plugin-i",
               "eslint-plugin-css-modules",
               "eslint-plugin-no-secrets"
+=======
+              "eslint-plugin-jsx-a11y",
+              "eslint-plugin-jest",
+              "eslint-plugin-react",
+              "eslint-plugin-import",
+              "eslint-plugin-unused-imports",
+              "eslint-plugin-react-hooks",
+              "eslint-plugin-unicorn",
+              "eslint-plugin-security",
+              "eslint-plugin-prettier",
+              "eslint-plugin-ft-flow",
+              "eslint-plugin-cypress",
+              "eslint-plugin-regexp",
+              "eslint-plugin-eslint-plugin",
+              "eslint-plugin-mocha",
+              "eslint-plugin-qunit",
+              "eslint-plugin-ember",
+              "eslint-plugin-no-only-tests",
+              "eslint-plugin-jsdoc",
+              "eslint-plugin-react-native",
+              "@tanstack/eslint-plugin-query",
+              "eslint-plugin-testing-library",
+              "eslint-plugin-canonical",
+              "eslint-plugin-chai-friendly",
+              "eslint-plugin-vue",
+              "eslint-plugin-jest-formatting",
+              "eslint-plugin-promise",
+              "eslint-plugin-html",
+              "eslint-plugin-local-rules",
+              "eslint-plugin-i18next",
+              "eslint-plugin-you-dont-need-lodash-underscore",
+              "eslint-plugin-yml",
+              "eslint-plugin-react-redux",
+              "eslint-plugin-simple-import-sort",
+              "eslint-plugin-react-perf",
+              "eslint-plugin-tsdoc",
+              "@next/eslint-plugin-next",
+              "eslint-plugin-jest-dom",
+              "eslint-plugin-es-x",
+              "eslint-plugin-flowtype",
+              "eslint-plugin-babel",
+              "eslint-plugin-react-native-a11y",
+              "eslint-plugin-n",
+              "eslint-plugin-jasmine",
+              "eslint-plugin-prefer-arrow",
+              "@rushstack/eslint-plugin-security",
+              "eslint-plugin-lit-a11y",
+              "eslint-plugin-deprecation",
+              "eslint-plugin-nuxt",
+              "eslint-plugin-compat",
+              "eslint-plugin-sort-exports",
+              "eslint-plugin-perfectionist",
+              "eslint-plugin-sonarjs",
+              "eslint-plugin-i",
+              "eslint-plugin-check-file",
+              "eslint-plugin-sort-keys-fix",
+              "eslint-plugin-vuejs-accessibility",
+              "eslint-plugin-typescript-sort-keys",
+              "eslint-plugin-tailwindcss",
+              "eslint-plugin-playwright",
+              "eslint-plugin-jsonc",
+              "eslint-plugin-react-refresh",
+              "eslint-plugin-eslint-comments",
+              "eslint-plugin-css-modules",
+              "@angular-eslint/eslint-plugin-template",
+              "eslint-plugin-es",
+              "eslint-plugin-sort-class-members",
+              "eslint-plugin-header"
+>>>>>>> refs/remotes/origin/main
             ]
           },
           {
@@ -123,7 +196,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "suffixes": {
                   "type": "array",
@@ -136,7 +213,11 @@
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Classes decorated with @Component must have suffix \"Component\" (or custom) in their name. See more at https://angular.dev/style-guide#style-02-03\nhttps://github.com/angular-eslint/angular-eslint/blob/main/packages/eslint-plugin/docs/rules/component-class-suffix.md"
+=======
+      "description": "Classes decorated with @Component must have suffix \"Component\" (or custom) in their name. See more at https://angular.io/styleguide#style-02-03\nhttps://github.com/angular-eslint/angular-eslint/blob/main/packages/eslint-plugin/docs/rules/component-class-suffix.md"
+>>>>>>> refs/remotes/origin/main
     },
     "@angular-eslint/component-max-inline-declarations": {
       "oneOf": [
@@ -163,7 +244,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "template": {
                   "minimum": 0,
@@ -182,7 +267,11 @@
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Enforces a maximum number of lines in inline template, styles and animations. See more at https://angular.dev/style-guide#style-05-04\nhttps://github.com/angular-eslint/angular-eslint/blob/main/packages/eslint-plugin/docs/rules/component-max-inline-declarations.md"
+=======
+      "description": "Enforces a maximum number of lines in inline template, styles and animations. See more at https://angular.io/guide/styleguide#style-05-04\nhttps://github.com/angular-eslint/angular-eslint/blob/main/packages/eslint-plugin/docs/rules/component-max-inline-declarations.md"
+>>>>>>> refs/remotes/origin/main
     },
     "@angular-eslint/component-selector": {
       "oneOf": [
@@ -209,7 +298,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "type": {
                   "oneOf": [
@@ -244,6 +337,7 @@
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Component selectors should follow given naming rules. See more at https://angular.dev/style-guide#style-02-07, https://angular.dev/style-guide#style-05-02\n      and https://angular.dev/style-guide#style-05-03.\nhttps://github.com/angular-eslint/angular-eslint/blob/main/packages/eslint-plugin/docs/rules/component-selector.md"
     },
     "@angular-eslint/consistent-component-styles": {
@@ -278,6 +372,9 @@
         }
       ],
       "description": "Ensures consistent usage of `styles`/`styleUrls`/`styleUrl` within Component metadata\nhttps://github.com/angular-eslint/angular-eslint/blob/main/packages/eslint-plugin/docs/rules/consistent-component-styles.md"
+=======
+      "description": "Component selectors should follow given naming rules. See more at https://angular.io/guide/styleguide#style-02-07, https://angular.io/guide/styleguide#style-05-02\n      and https://angular.io/guide/styleguide#style-05-03.\nhttps://github.com/angular-eslint/angular-eslint/blob/main/packages/eslint-plugin/docs/rules/component-selector.md"
+>>>>>>> refs/remotes/origin/main
     },
     "@angular-eslint/contextual-decorator": {
       "description": "Ensures that classes use contextual decorators in its body\nhttps://github.com/angular-eslint/angular-eslint/blob/main/packages/eslint-plugin/docs/rules/contextual-decorator.md"
@@ -310,7 +407,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "suffixes": {
                   "type": "array",
@@ -323,7 +424,11 @@
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Classes decorated with @Directive must have suffix \"Directive\" (or custom) in their name. See more at https://angular.dev/style-guide#style-02-03\nhttps://github.com/angular-eslint/angular-eslint/blob/main/packages/eslint-plugin/docs/rules/directive-class-suffix.md"
+=======
+      "description": "Classes decorated with @Directive must have suffix \"Directive\" (or custom) in their name. See more at https://angular.io/styleguide#style-02-03\nhttps://github.com/angular-eslint/angular-eslint/blob/main/packages/eslint-plugin/docs/rules/directive-class-suffix.md"
+>>>>>>> refs/remotes/origin/main
     },
     "@angular-eslint/directive-selector": {
       "oneOf": [
@@ -350,7 +455,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "type": {
                   "oneOf": [
@@ -385,10 +494,14 @@
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Directive selectors should follow given naming rules. See more at https://angular.dev/style-guide#style-02-06 and https://angular.dev/style-guide#style-02-08.\nhttps://github.com/angular-eslint/angular-eslint/blob/main/packages/eslint-plugin/docs/rules/directive-selector.md"
     },
     "@angular-eslint/no-async-lifecycle-method": {
       "description": "Angular Lifecycle methods should not be async. Angular does not wait for async lifecycle but the code incorrectly suggests it does.\nhttps://github.com/angular-eslint/angular-eslint/blob/main/packages/eslint-plugin/docs/rules/no-async-lifecycle-method.md"
+=======
+      "description": "Directive selectors should follow given naming rules. See more at https://angular.io/guide/styleguide#style-02-06 and https://angular.io/guide/styleguide#style-02-08.\nhttps://github.com/angular-eslint/angular-eslint/blob/main/packages/eslint-plugin/docs/rules/directive-selector.md"
+>>>>>>> refs/remotes/origin/main
     },
     "@angular-eslint/no-attribute-decorator": {
       "description": "The @Attribute decorator is used to obtain a single value for an attribute. This is a much less common use-case than getting a stream of values (using @Input), so often the @Attribute decorator is mistakenly used when @Input was what was intended. This rule disallows usage of @Attribute decorator altogether in order to prevent these mistakes.\nhttps://github.com/angular-eslint/angular-eslint/blob/main/packages/eslint-plugin/docs/rules/no-attribute-decorator.md"
@@ -396,9 +509,12 @@
     "@angular-eslint/no-conflicting-lifecycle": {
       "description": "Ensures that directives not implement conflicting lifecycle interfaces.\nhttps://github.com/angular-eslint/angular-eslint/blob/main/packages/eslint-plugin/docs/rules/no-conflicting-lifecycle.md"
     },
+<<<<<<< HEAD
     "@angular-eslint/no-duplicates-in-metadata-arrays": {
       "description": "Ensures that metadata arrays do not contain duplicate entries.\nhttps://github.com/angular-eslint/angular-eslint/blob/main/packages/eslint-plugin/docs/rules/no-duplicates-in-metadata-arrays.md"
     },
+=======
+>>>>>>> refs/remotes/origin/main
     "@angular-eslint/no-empty-lifecycle-method": {
       "description": "Disallows declaring empty lifecycle methods\nhttps://github.com/angular-eslint/angular-eslint/blob/main/packages/eslint-plugin/docs/rules/no-empty-lifecycle-method.md"
     },
@@ -430,7 +546,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "allowStatic": {
                   "type": "boolean",
@@ -441,7 +561,11 @@
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Disallows usage of the `host` metadata property. NOTE: This used to be recommended by the Angular Team, but now they recommend the exact opposite: https://github.com/angular/angular/issues/54284\nhttps://github.com/angular-eslint/angular-eslint/blob/main/packages/eslint-plugin/docs/rules/no-host-metadata-property.md"
+=======
+      "description": "Disallows usage of the `host` metadata property. See more at https://angular.io/styleguide#style-06-03\nhttps://github.com/angular-eslint/angular-eslint/blob/main/packages/eslint-plugin/docs/rules/no-host-metadata-property.md"
+>>>>>>> refs/remotes/origin/main
     },
     "@angular-eslint/no-input-prefix": {
       "oneOf": [
@@ -468,7 +592,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "prefixes": {
                   "type": "array",
@@ -508,7 +636,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "allowedNames": {
                   "type": "array",
@@ -526,7 +658,11 @@
       "description": "Ensures that input bindings are not aliased\nhttps://github.com/angular-eslint/angular-eslint/blob/main/packages/eslint-plugin/docs/rules/no-input-rename.md"
     },
     "@angular-eslint/no-inputs-metadata-property": {
+<<<<<<< HEAD
       "description": "Disallows usage of the `inputs` metadata property. See more at https://angular.dev/style-guide#style-05-12\nhttps://github.com/angular-eslint/angular-eslint/blob/main/packages/eslint-plugin/docs/rules/no-inputs-metadata-property.md"
+=======
+      "description": "Disallows usage of the `inputs` metadata property. See more at https://angular.io/styleguide#style-05-12\nhttps://github.com/angular-eslint/angular-eslint/blob/main/packages/eslint-plugin/docs/rules/no-inputs-metadata-property.md"
+>>>>>>> refs/remotes/origin/main
     },
     "@angular-eslint/no-lifecycle-call": {
       "description": "Disallows explicit calls to lifecycle methods\nhttps://github.com/angular-eslint/angular-eslint/blob/main/packages/eslint-plugin/docs/rules/no-lifecycle-call.md"
@@ -535,19 +671,31 @@
       "description": "Ensures that output bindings, including aliases, are not named as standard DOM events\nhttps://github.com/angular-eslint/angular-eslint/blob/main/packages/eslint-plugin/docs/rules/no-output-native.md"
     },
     "@angular-eslint/no-output-on-prefix": {
+<<<<<<< HEAD
       "description": "Ensures that output bindings, including aliases, are not named \"on\", nor prefixed with it. See more at https://angular.dev/style-guide#style-05-16\nhttps://github.com/angular-eslint/angular-eslint/blob/main/packages/eslint-plugin/docs/rules/no-output-on-prefix.md"
+=======
+      "description": "Ensures that output bindings, including aliases, are not named \"on\", nor prefixed with it. See more at https://angular.io/guide/styleguide#style-05-16\nhttps://github.com/angular-eslint/angular-eslint/blob/main/packages/eslint-plugin/docs/rules/no-output-on-prefix.md"
+>>>>>>> refs/remotes/origin/main
     },
     "@angular-eslint/no-output-rename": {
       "description": "Ensures that output bindings are not aliased\nhttps://github.com/angular-eslint/angular-eslint/blob/main/packages/eslint-plugin/docs/rules/no-output-rename.md"
     },
     "@angular-eslint/no-outputs-metadata-property": {
+<<<<<<< HEAD
       "description": "Disallows usage of the `outputs` metadata property. See more at https://angular.dev/style-guide#style-05-12\nhttps://github.com/angular-eslint/angular-eslint/blob/main/packages/eslint-plugin/docs/rules/no-outputs-metadata-property.md"
+=======
+      "description": "Disallows usage of the `outputs` metadata property. See more at https://angular.io/styleguide#style-05-12\nhttps://github.com/angular-eslint/angular-eslint/blob/main/packages/eslint-plugin/docs/rules/no-outputs-metadata-property.md"
+>>>>>>> refs/remotes/origin/main
     },
     "@angular-eslint/no-pipe-impure": {
       "description": "Disallows the declaration of impure pipes\nhttps://github.com/angular-eslint/angular-eslint/blob/main/packages/eslint-plugin/docs/rules/no-pipe-impure.md"
     },
     "@angular-eslint/no-queries-metadata-property": {
+<<<<<<< HEAD
       "description": "Disallows usage of the `queries` metadata property. See more at https://angular.dev/style-guide#style-05-12.\nhttps://github.com/angular-eslint/angular-eslint/blob/main/packages/eslint-plugin/docs/rules/no-queries-metadata-property.md"
+=======
+      "description": "Disallows usage of the `queries` metadata property. See more at https://angular.io/styleguide#style-05-12.\nhttps://github.com/angular-eslint/angular-eslint/blob/main/packages/eslint-plugin/docs/rules/no-queries-metadata-property.md"
+>>>>>>> refs/remotes/origin/main
     },
     "@angular-eslint/pipe-prefix": {
       "oneOf": [
@@ -574,7 +722,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "prefixes": {
                   "type": "array",
@@ -593,9 +745,12 @@
     "@angular-eslint/prefer-on-push-component-change-detection": {
       "description": "Ensures component's `changeDetection` is set to `ChangeDetectionStrategy.OnPush`\nhttps://github.com/angular-eslint/angular-eslint/blob/main/packages/eslint-plugin/docs/rules/prefer-on-push-component-change-detection.md"
     },
+<<<<<<< HEAD
     "@angular-eslint/prefer-standalone": {
       "description": "Ensures component, directive and pipe `standalone` property is set to `true` in the component decorator\nhttps://github.com/angular-eslint/angular-eslint/blob/main/packages/eslint-plugin/docs/rules/prefer-standalone.md"
     },
+=======
+>>>>>>> refs/remotes/origin/main
     "@angular-eslint/prefer-standalone-component": {
       "description": "Ensures component `standalone` property is set to `true` in the component decorator\nhttps://github.com/angular-eslint/angular-eslint/blob/main/packages/eslint-plugin/docs/rules/prefer-standalone-component.md"
     },
@@ -603,7 +758,11 @@
       "description": "Prefer to declare `@Output` as `readonly` since they are not supposed to be reassigned\nhttps://github.com/angular-eslint/angular-eslint/blob/main/packages/eslint-plugin/docs/rules/prefer-output-readonly.md"
     },
     "@angular-eslint/relative-url-prefix": {
+<<<<<<< HEAD
       "description": "The ./ and ../ prefix is standard syntax for relative URLs; don't depend on Angular's current ability to do without that prefix. See more at https://angular.dev/style-guide#style-05-04\nhttps://github.com/angular-eslint/angular-eslint/blob/main/packages/eslint-plugin/docs/rules/relative-url-prefix.md"
+=======
+      "description": "The ./ and ../ prefix is standard syntax for relative URLs; don't depend on Angular's current ability to do without that prefix. See more at https://angular.io/styleguide#style-05-04\nhttps://github.com/angular-eslint/angular-eslint/blob/main/packages/eslint-plugin/docs/rules/relative-url-prefix.md"
+>>>>>>> refs/remotes/origin/main
     },
     "@angular-eslint/require-localize-metadata": {
       "oneOf": [
@@ -630,7 +789,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "requireDescription": {
                   "type": "boolean",
@@ -675,7 +838,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "locale": {
                   "type": "string",
@@ -720,7 +887,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "ignoreClassNamePattern": {
                   "type": "string"
@@ -733,7 +904,11 @@
       "description": "Using the `providedIn` property makes `Injectables` tree-shakable\nhttps://github.com/angular-eslint/angular-eslint/blob/main/packages/eslint-plugin/docs/rules/use-injectable-provided-in.md"
     },
     "@angular-eslint/use-lifecycle-interface": {
+<<<<<<< HEAD
       "description": "Ensures that classes implement lifecycle interfaces corresponding to the declared lifecycle methods. See more at https://angular.dev/style-guide#style-09-01\nhttps://github.com/angular-eslint/angular-eslint/blob/main/packages/eslint-plugin/docs/rules/use-lifecycle-interface.md"
+=======
+      "description": "Ensures that classes implement lifecycle interfaces corresponding to the declared lifecycle methods. See more at https://angular.io/styleguide#style-09-01\nhttps://github.com/angular-eslint/angular-eslint/blob/main/packages/eslint-plugin/docs/rules/use-lifecycle-interface.md"
+>>>>>>> refs/remotes/origin/main
     },
     "@angular-eslint/use-pipe-transform-interface": {
       "description": "Ensures that `Pipes` implement `PipeTransform` interface\nhttps://github.com/angular-eslint/angular-eslint/blob/main/packages/eslint-plugin/docs/rules/use-pipe-transform-interface.md"
@@ -763,7 +938,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "commonjs": {
                   "type": "boolean"
@@ -795,7 +974,11 @@
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Ensure imports point to a file/module that can be resolved.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.1/docs/rules/no-unresolved.md"
+=======
+      "description": "Ensure imports point to a file/module that can be resolved.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.0/docs/rules/no-unresolved.md"
+>>>>>>> refs/remotes/origin/main
     },
     "eslint-plugin-import/named": {
       "oneOf": [
@@ -822,7 +1005,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "commonjs": {
                   "type": "boolean"
@@ -832,10 +1019,17 @@
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Ensure named imports correspond to a named export in the remote file.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.1/docs/rules/named.md"
     },
     "eslint-plugin-import/default": {
       "description": "Ensure a default export is present, given a default import.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.1/docs/rules/default.md"
+=======
+      "description": "Ensure named imports correspond to a named export in the remote file.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.0/docs/rules/named.md"
+    },
+    "eslint-plugin-import/default": {
+      "description": "Ensure a default export is present, given a default import.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.0/docs/rules/default.md"
+>>>>>>> refs/remotes/origin/main
     },
     "eslint-plugin-import/namespace": {
       "oneOf": [
@@ -862,7 +1056,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "allowComputed": {
                   "description": "If `false`, will report computed (and thus, un-lintable) references to namespace members.",
@@ -874,7 +1072,11 @@
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Ensure imported namespaces contain dereferenced properties as they are dereferenced.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.1/docs/rules/namespace.md"
+=======
+      "description": "Ensure imported namespaces contain dereferenced properties as they are dereferenced.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.0/docs/rules/namespace.md"
+>>>>>>> refs/remotes/origin/main
     },
     "eslint-plugin-import/no-namespace": {
       "oneOf": [
@@ -901,7 +1103,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "ignore": {
                   "type": "array",
@@ -915,6 +1121,7 @@
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Forbid namespace (a.k.a. \"wildcard\" `*`) imports.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.1/docs/rules/no-namespace.md"
     },
     "eslint-plugin-import/export": {
@@ -925,6 +1132,18 @@
     },
     "eslint-plugin-import/extensions": {
       "description": "Ensure consistent use of file extension within the import path.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.1/docs/rules/extensions.md"
+=======
+      "description": "Forbid namespace (a.k.a. \"wildcard\" `*`) imports.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.0/docs/rules/no-namespace.md"
+    },
+    "eslint-plugin-import/export": {
+      "description": "Forbid any invalid exports, i.e. re-export of the same name.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.0/docs/rules/export.md"
+    },
+    "eslint-plugin-import/no-mutable-exports": {
+      "description": "Forbid the use of mutable exports with `var` or `let`.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.0/docs/rules/no-mutable-exports.md"
+    },
+    "eslint-plugin-import/extensions": {
+      "description": "Ensure consistent use of file extension within the import path.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.0/docs/rules/extensions.md"
+>>>>>>> refs/remotes/origin/main
     },
     "eslint-plugin-import/no-restricted-paths": {
       "oneOf": [
@@ -951,7 +1170,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "zones": {
                   "type": "array",
@@ -1011,7 +1234,11 @@
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Enforce which files can be imported in a given folder.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.1/docs/rules/no-restricted-paths.md"
+=======
+      "description": "Enforce which files can be imported in a given folder.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.0/docs/rules/no-restricted-paths.md"
+>>>>>>> refs/remotes/origin/main
     },
     "eslint-plugin-import/no-internal-modules": {
       "oneOf": [
@@ -1038,16 +1265,27 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Forbid importing the submodules of other modules.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.1/docs/rules/no-internal-modules.md"
     },
     "eslint-plugin-import/group-exports": {
       "description": "Prefer named exports to be grouped together in a single export declaration\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.1/docs/rules/group-exports.md"
+=======
+      "description": "Forbid importing the submodules of other modules.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.0/docs/rules/no-internal-modules.md"
+    },
+    "eslint-plugin-import/group-exports": {
+      "description": "Prefer named exports to be grouped together in a single export declaration\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.0/docs/rules/group-exports.md"
+>>>>>>> refs/remotes/origin/main
     },
     "eslint-plugin-import/no-relative-packages": {
       "oneOf": [
@@ -1074,7 +1312,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "commonjs": {
                   "type": "boolean"
@@ -1098,7 +1340,11 @@
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Forbid importing packages through relative paths.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.1/docs/rules/no-relative-packages.md"
+=======
+      "description": "Forbid importing packages through relative paths.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.0/docs/rules/no-relative-packages.md"
+>>>>>>> refs/remotes/origin/main
     },
     "eslint-plugin-import/no-relative-parent-imports": {
       "oneOf": [
@@ -1125,7 +1371,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "commonjs": {
                   "type": "boolean"
@@ -1149,7 +1399,11 @@
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Forbid importing modules from parent directories.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.1/docs/rules/no-relative-parent-imports.md"
+=======
+      "description": "Forbid importing modules from parent directories.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.0/docs/rules/no-relative-parent-imports.md"
+>>>>>>> refs/remotes/origin/main
     },
     "eslint-plugin-import/consistent-type-specifier-style": {
       "oneOf": [
@@ -1176,16 +1430,27 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Enforce or ban the use of inline type-only markers for named imports.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.1/docs/rules/consistent-type-specifier-style.md"
     },
     "eslint-plugin-import/no-self-import": {
       "description": "Forbid a module from importing itself.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.1/docs/rules/no-self-import.md"
+=======
+      "description": "Enforce or ban the use of inline type-only markers for named imports.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.0/docs/rules/consistent-type-specifier-style.md"
+    },
+    "eslint-plugin-import/no-self-import": {
+      "description": "Forbid a module from importing itself.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.0/docs/rules/no-self-import.md"
+>>>>>>> refs/remotes/origin/main
     },
     "eslint-plugin-import/no-cycle": {
       "oneOf": [
@@ -1212,7 +1477,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "commonjs": {
                   "type": "boolean"
@@ -1259,6 +1528,7 @@
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Forbid a module from importing a module with a dependency path back to itself.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.1/docs/rules/no-cycle.md"
     },
     "eslint-plugin-import/no-named-default": {
@@ -1269,6 +1539,18 @@
     },
     "eslint-plugin-import/no-named-as-default-member": {
       "description": "Forbid use of exported name as property of default export.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.1/docs/rules/no-named-as-default-member.md"
+=======
+      "description": "Forbid a module from importing a module with a dependency path back to itself.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.0/docs/rules/no-cycle.md"
+    },
+    "eslint-plugin-import/no-named-default": {
+      "description": "Forbid named default exports.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.0/docs/rules/no-named-default.md"
+    },
+    "eslint-plugin-import/no-named-as-default": {
+      "description": "Forbid use of exported name as identifier of default export.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.0/docs/rules/no-named-as-default.md"
+    },
+    "eslint-plugin-import/no-named-as-default-member": {
+      "description": "Forbid use of exported name as property of default export.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.0/docs/rules/no-named-as-default-member.md"
+>>>>>>> refs/remotes/origin/main
     },
     "eslint-plugin-import/no-anonymous-default-export": {
       "oneOf": [
@@ -1295,7 +1577,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "allowArray": {
                   "description": "If `false`, will report default export of an array",
@@ -1334,7 +1620,11 @@
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Forbid anonymous values as default exports.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.1/docs/rules/no-anonymous-default-export.md"
+=======
+      "description": "Forbid anonymous values as default exports.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.0/docs/rules/no-anonymous-default-export.md"
+>>>>>>> refs/remotes/origin/main
     },
     "eslint-plugin-import/no-unused-modules": {
       "oneOf": [
@@ -1361,7 +1651,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "src": {
                   "description": "files/paths to be analyzed (only for unused exports)",
@@ -1394,6 +1688,7 @@
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Forbid modules without exports, or exports without matching import in another module.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.1/docs/rules/no-unused-modules.md"
     },
     "eslint-plugin-import/no-commonjs": {
@@ -1401,6 +1696,15 @@
     },
     "eslint-plugin-import/no-amd": {
       "description": "Forbid AMD `require` and `define` calls.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.1/docs/rules/no-amd.md"
+=======
+      "description": "Forbid modules without exports, or exports without matching import in another module.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.0/docs/rules/no-unused-modules.md"
+    },
+    "eslint-plugin-import/no-commonjs": {
+      "description": "Forbid CommonJS `require` calls and `module.exports` or `exports.*`.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.0/docs/rules/no-commonjs.md"
+    },
+    "eslint-plugin-import/no-amd": {
+      "description": "Forbid AMD `require` and `define` calls.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.0/docs/rules/no-amd.md"
+>>>>>>> refs/remotes/origin/main
     },
     "eslint-plugin-import/no-duplicates": {
       "oneOf": [
@@ -1427,7 +1731,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "considerQueryString": {
                   "type": "boolean"
@@ -1440,7 +1748,11 @@
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Forbid repeated import of the same module in multiple places.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.1/docs/rules/no-duplicates.md"
+=======
+      "description": "Forbid repeated import of the same module in multiple places.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.0/docs/rules/no-duplicates.md"
+>>>>>>> refs/remotes/origin/main
     },
     "eslint-plugin-import/first": {
       "oneOf": [
@@ -1467,13 +1779,21 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Ensure all imports appear before other statements.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.1/docs/rules/first.md"
+=======
+      "description": "Ensure all imports appear before other statements.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.0/docs/rules/first.md"
+>>>>>>> refs/remotes/origin/main
     },
     "eslint-plugin-import/max-dependencies": {
       "oneOf": [
@@ -1500,7 +1820,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "max": {
                   "type": "number"
@@ -1513,7 +1837,11 @@
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Enforce the maximum number of dependencies a module can have.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.1/docs/rules/max-dependencies.md"
+=======
+      "description": "Enforce the maximum number of dependencies a module can have.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.0/docs/rules/max-dependencies.md"
+>>>>>>> refs/remotes/origin/main
     },
     "eslint-plugin-import/no-extraneous-dependencies": {
       "oneOf": [
@@ -1540,7 +1868,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "devDependencies": {
                   "oneOf": [
@@ -1616,7 +1948,11 @@
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Forbid the use of extraneous packages.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.1/docs/rules/no-extraneous-dependencies.md"
+=======
+      "description": "Forbid the use of extraneous packages.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.0/docs/rules/no-extraneous-dependencies.md"
+>>>>>>> refs/remotes/origin/main
     },
     "eslint-plugin-import/no-absolute-path": {
       "oneOf": [
@@ -1643,7 +1979,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "commonjs": {
                   "type": "boolean"
@@ -1667,7 +2007,11 @@
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Forbid import of modules using absolute paths.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.1/docs/rules/no-absolute-path.md"
+=======
+      "description": "Forbid import of modules using absolute paths.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.0/docs/rules/no-absolute-path.md"
+>>>>>>> refs/remotes/origin/main
     },
     "eslint-plugin-import/no-nodejs-modules": {
       "oneOf": [
@@ -1694,7 +2038,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "allow": {
                   "type": "array",
@@ -1708,10 +2056,17 @@
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Forbid Node.js builtin modules.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.1/docs/rules/no-nodejs-modules.md"
     },
     "eslint-plugin-import/no-webpack-loader-syntax": {
       "description": "Forbid webpack loader syntax in imports.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.1/docs/rules/no-webpack-loader-syntax.md"
+=======
+      "description": "Forbid Node.js builtin modules.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.0/docs/rules/no-nodejs-modules.md"
+    },
+    "eslint-plugin-import/no-webpack-loader-syntax": {
+      "description": "Forbid webpack loader syntax in imports.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.0/docs/rules/no-webpack-loader-syntax.md"
+>>>>>>> refs/remotes/origin/main
     },
     "eslint-plugin-import/order": {
       "oneOf": [
@@ -1738,7 +2093,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "groups": {
                   "type": "array"
@@ -1819,7 +2178,11 @@
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Enforce a convention in module import order.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.1/docs/rules/order.md"
+=======
+      "description": "Enforce a convention in module import order.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.0/docs/rules/order.md"
+>>>>>>> refs/remotes/origin/main
     },
     "eslint-plugin-import/newline-after-import": {
       "oneOf": [
@@ -1846,7 +2209,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "count": {
                   "type": "integer",
@@ -1863,7 +2230,11 @@
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Enforce a newline after import statements.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.1/docs/rules/newline-after-import.md"
+=======
+      "description": "Enforce a newline after import statements.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.0/docs/rules/newline-after-import.md"
+>>>>>>> refs/remotes/origin/main
     },
     "eslint-plugin-import/prefer-default-export": {
       "oneOf": [
@@ -1890,7 +2261,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "target": {
                   "type": "string",
@@ -1902,6 +2277,7 @@
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Prefer a default export if module exports a single name or multiple names.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.1/docs/rules/prefer-default-export.md"
     },
     "eslint-plugin-import/no-default-export": {
@@ -1909,6 +2285,15 @@
     },
     "eslint-plugin-import/no-named-export": {
       "description": "Forbid named exports.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.1/docs/rules/no-named-export.md"
+=======
+      "description": "Prefer a default export if module exports a single name or multiple names.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.0/docs/rules/prefer-default-export.md"
+    },
+    "eslint-plugin-import/no-default-export": {
+      "description": "Forbid default exports.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.0/docs/rules/no-default-export.md"
+    },
+    "eslint-plugin-import/no-named-export": {
+      "description": "Forbid named exports.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.0/docs/rules/no-named-export.md"
+>>>>>>> refs/remotes/origin/main
     },
     "eslint-plugin-import/no-dynamic-require": {
       "oneOf": [
@@ -1935,7 +2320,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "esmodule": {
                   "type": "boolean"
@@ -1945,10 +2334,17 @@
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Forbid `require()` calls with expressions.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.1/docs/rules/no-dynamic-require.md"
     },
     "eslint-plugin-import/unambiguous": {
       "description": "Forbid potentially ambiguous parse goal (`script` vs. `module`).\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.1/docs/rules/unambiguous.md"
+=======
+      "description": "Forbid `require()` calls with expressions.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.0/docs/rules/no-dynamic-require.md"
+    },
+    "eslint-plugin-import/unambiguous": {
+      "description": "Forbid potentially ambiguous parse goal (`script` vs. `module`).\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.0/docs/rules/unambiguous.md"
+>>>>>>> refs/remotes/origin/main
     },
     "eslint-plugin-import/no-unassigned-import": {
       "oneOf": [
@@ -1975,7 +2371,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "devDependencies": {
                   "oneOf": [
@@ -2021,7 +2421,11 @@
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Forbid unassigned imports\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.1/docs/rules/no-unassigned-import.md"
+=======
+      "description": "Forbid unassigned imports\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.0/docs/rules/no-unassigned-import.md"
+>>>>>>> refs/remotes/origin/main
     },
     "eslint-plugin-import/no-useless-path-segments": {
       "oneOf": [
@@ -2048,7 +2452,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "commonjs": {
                   "type": "boolean"
@@ -2061,7 +2469,11 @@
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Forbid unnecessary path segments in import and require statements.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.1/docs/rules/no-useless-path-segments.md"
+=======
+      "description": "Forbid unnecessary path segments in import and require statements.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.0/docs/rules/no-useless-path-segments.md"
+>>>>>>> refs/remotes/origin/main
     },
     "eslint-plugin-import/dynamic-import-chunkname": {
       "oneOf": [
@@ -2088,7 +2500,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "importFunctions": {
                   "type": "array",
@@ -2105,7 +2521,11 @@
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Enforce a leading comment with the webpackChunkName for dynamic imports.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.1/docs/rules/dynamic-import-chunkname.md"
+=======
+      "description": "Enforce a leading comment with the webpackChunkName for dynamic imports.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.0/docs/rules/dynamic-import-chunkname.md"
+>>>>>>> refs/remotes/origin/main
     },
     "eslint-plugin-import/no-import-module-exports": {
       "oneOf": [
@@ -2132,7 +2552,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "exceptions": {
                   "type": "array"
@@ -2145,6 +2569,7 @@
       "description": "Forbid import statements with CommonJS module.exports.\n"
     },
     "eslint-plugin-import/no-empty-named-blocks": {
+<<<<<<< HEAD
       "description": "Forbid empty named import blocks.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.1/docs/rules/no-empty-named-blocks.md"
     },
     "eslint-plugin-import/exports-last": {
@@ -2152,6 +2577,15 @@
     },
     "eslint-plugin-import/no-deprecated": {
       "description": "Forbid imported names marked with `@deprecated` documentation tag.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.1/docs/rules/no-deprecated.md"
+=======
+      "description": "Forbid empty named import blocks.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.0/docs/rules/no-empty-named-blocks.md"
+    },
+    "eslint-plugin-import/exports-last": {
+      "description": "Ensure all exports appear after other statements.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.0/docs/rules/exports-last.md"
+    },
+    "eslint-plugin-import/no-deprecated": {
+      "description": "Forbid imported names marked with `@deprecated` documentation tag.\nhttps://github.com/import-js/eslint-plugin-import/blob/v2.29.0/docs/rules/no-deprecated.md"
+>>>>>>> refs/remotes/origin/main
     },
     "eslint-plugin-import/imports-first": {
       "oneOf": [
@@ -2178,7 +2612,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -2211,7 +2649,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "sortCharacterClasses": {
                   "type": "boolean",
@@ -2222,7 +2664,11 @@
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Improve regexes by making them shorter, consistent, and safer.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v54.0.0/docs/rules/better-regex.md"
+=======
+      "description": "Improve regexes by making them shorter, consistent, and safer.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/better-regex.md"
+>>>>>>> refs/remotes/origin/main
     },
     "eslint-plugin-unicorn/catch-error-name": {
       "oneOf": [
@@ -2249,7 +2695,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "name": {
                   "type": "string"
@@ -2263,6 +2713,7 @@
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Enforce a specific parameter name in catch clauses.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v54.0.0/docs/rules/catch-error-name.md"
     },
     "eslint-plugin-unicorn/consistent-destructuring": {
@@ -2270,6 +2721,12 @@
     },
     "eslint-plugin-unicorn/consistent-empty-array-spread": {
       "description": "Prefer consistent types when spreading a ternary in an array literal.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v54.0.0/docs/rules/consistent-empty-array-spread.md"
+=======
+      "description": "Enforce a specific parameter name in catch clauses.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/catch-error-name.md"
+    },
+    "eslint-plugin-unicorn/consistent-destructuring": {
+      "description": "Use destructured variables over properties.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/consistent-destructuring.md"
+>>>>>>> refs/remotes/origin/main
     },
     "eslint-plugin-unicorn/consistent-function-scoping": {
       "oneOf": [
@@ -2296,7 +2753,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "checkArrowFunctions": {
                   "type": "boolean",
@@ -2307,6 +2768,7 @@
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Move function definitions to the highest possible scope.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v54.0.0/docs/rules/consistent-function-scoping.md"
     },
     "eslint-plugin-unicorn/custom-error-definition": {
@@ -2320,6 +2782,21 @@
     },
     "eslint-plugin-unicorn/escape-case": {
       "description": "Require escape sequences to use uppercase values.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v54.0.0/docs/rules/escape-case.md"
+=======
+      "description": "Move function definitions to the highest possible scope.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/consistent-function-scoping.md"
+    },
+    "eslint-plugin-unicorn/custom-error-definition": {
+      "description": "Enforce correct `Error` subclassing.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/custom-error-definition.md"
+    },
+    "eslint-plugin-unicorn/empty-brace-spaces": {
+      "description": "Enforce no spaces between braces.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/empty-brace-spaces.md"
+    },
+    "eslint-plugin-unicorn/error-message": {
+      "description": "Enforce passing a `message` value when creating a built-in error.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/error-message.md"
+    },
+    "eslint-plugin-unicorn/escape-case": {
+      "description": "Require escape sequences to use uppercase values.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/escape-case.md"
+>>>>>>> refs/remotes/origin/main
     },
     "eslint-plugin-unicorn/expiring-todo-comments": {
       "oneOf": [
@@ -2346,7 +2823,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "terms": {
                   "type": "array",
@@ -2375,7 +2856,11 @@
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Add expiration conditions to TODO comments.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v54.0.0/docs/rules/expiring-todo-comments.md"
+=======
+      "description": "Add expiration conditions to TODO comments.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/expiring-todo-comments.md"
+>>>>>>> refs/remotes/origin/main
     },
     "eslint-plugin-unicorn/explicit-length-check": {
       "oneOf": [
@@ -2402,7 +2887,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "non-zero": {
                   "enum": ["greater-than", "not-equal"],
@@ -2413,7 +2902,11 @@
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Enforce explicitly comparing the `length` or `size` property of a value.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v54.0.0/docs/rules/explicit-length-check.md"
+=======
+      "description": "Enforce explicitly comparing the `length` or `size` property of a value.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/explicit-length-check.md"
+>>>>>>> refs/remotes/origin/main
     },
     "eslint-plugin-unicorn/filename-case": {
       "oneOf": [
@@ -2440,12 +2933,17 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Enforce a case style for filenames.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v54.0.0/docs/rules/filename-case.md"
     },
     "eslint-plugin-unicorn/import-style": {
@@ -2468,6 +2966,27 @@
     },
     "eslint-plugin-unicorn/no-array-method-this-argument": {
       "description": "Disallow using the `this` argument in array methods.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v54.0.0/docs/rules/no-array-method-this-argument.md"
+=======
+      "description": "Enforce a case style for filenames.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/filename-case.md"
+    },
+    "eslint-plugin-unicorn/import-style": {
+      "description": "Enforce specific import styles per module.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/import-style.md"
+    },
+    "eslint-plugin-unicorn/new-for-builtins": {
+      "description": "Enforce the use of `new` for all builtins, except `String`, `Number`, `Boolean`, `Symbol` and `BigInt`.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/new-for-builtins.md"
+    },
+    "eslint-plugin-unicorn/no-abusive-eslint-disable": {
+      "description": "Enforce specifying rules to disable in `eslint-disable` comments.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/no-abusive-eslint-disable.md"
+    },
+    "eslint-plugin-unicorn/no-array-callback-reference": {
+      "description": "Prevent passing a function reference directly to iterator methods.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/no-array-callback-reference.md"
+    },
+    "eslint-plugin-unicorn/no-array-for-each": {
+      "description": "Prefer `for…of` over the `forEach` method.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/no-array-for-each.md"
+    },
+    "eslint-plugin-unicorn/no-array-method-this-argument": {
+      "description": "Disallow using the `this` argument in array methods.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/no-array-method-this-argument.md"
+>>>>>>> refs/remotes/origin/main
     },
     "eslint-plugin-unicorn/no-array-push-push": {
       "oneOf": [
@@ -2494,7 +3013,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "ignore": {
                   "type": "array",
@@ -2505,7 +3028,11 @@
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Enforce combining multiple `Array#push()` into one call.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v54.0.0/docs/rules/no-array-push-push.md"
+=======
+      "description": "Enforce combining multiple `Array#push()` into one call.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/no-array-push-push.md"
+>>>>>>> refs/remotes/origin/main
     },
     "eslint-plugin-unicorn/no-array-reduce": {
       "oneOf": [
@@ -2532,7 +3059,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "allowSimpleOperations": {
                   "type": "boolean",
@@ -2543,6 +3074,7 @@
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Disallow `Array#reduce()` and `Array#reduceRight()`.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v54.0.0/docs/rules/no-array-reduce.md"
     },
     "eslint-plugin-unicorn/no-await-expression-member": {
@@ -2574,6 +3106,33 @@
     },
     "eslint-plugin-unicorn/no-invalid-remove-event-listener": {
       "description": "Prevent calling `EventTarget#removeEventListener()` with the result of an expression.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v54.0.0/docs/rules/no-invalid-remove-event-listener.md"
+=======
+      "description": "Disallow `Array#reduce()` and `Array#reduceRight()`.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/no-array-reduce.md"
+    },
+    "eslint-plugin-unicorn/no-await-expression-member": {
+      "description": "Disallow member access from await expression.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/no-await-expression-member.md"
+    },
+    "eslint-plugin-unicorn/no-console-spaces": {
+      "description": "Do not use leading/trailing space between `console.log` parameters.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/no-console-spaces.md"
+    },
+    "eslint-plugin-unicorn/no-document-cookie": {
+      "description": "Do not use `document.cookie` directly.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/no-document-cookie.md"
+    },
+    "eslint-plugin-unicorn/no-empty-file": {
+      "description": "Disallow empty files.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/no-empty-file.md"
+    },
+    "eslint-plugin-unicorn/no-for-loop": {
+      "description": "Do not use a `for` loop that can be replaced with a `for-of` loop.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/no-for-loop.md"
+    },
+    "eslint-plugin-unicorn/no-hex-escape": {
+      "description": "Enforce the use of Unicode escapes instead of hexadecimal escapes.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/no-hex-escape.md"
+    },
+    "eslint-plugin-unicorn/no-instanceof-array": {
+      "description": "Require `Array.isArray()` instead of `instanceof Array`.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/no-instanceof-array.md"
+    },
+    "eslint-plugin-unicorn/no-invalid-remove-event-listener": {
+      "description": "Prevent calling `EventTarget#removeEventListener()` with the result of an expression.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/no-invalid-remove-event-listener.md"
+>>>>>>> refs/remotes/origin/main
     },
     "eslint-plugin-unicorn/no-keyword-prefix": {
       "oneOf": [
@@ -2600,7 +3159,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "disallowedPrefixes": {
                   "type": "array",
@@ -2624,6 +3187,7 @@
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Disallow identifiers starting with `new` or `class`.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v54.0.0/docs/rules/no-keyword-prefix.md"
     },
     "eslint-plugin-unicorn/no-lonely-if": {
@@ -2646,6 +3210,24 @@
     },
     "eslint-plugin-unicorn/no-new-buffer": {
       "description": "Enforce the use of `Buffer.from()` and `Buffer.alloc()` instead of the deprecated `new Buffer()`.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v54.0.0/docs/rules/no-new-buffer.md"
+=======
+      "description": "Disallow identifiers starting with `new` or `class`.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/no-keyword-prefix.md"
+    },
+    "eslint-plugin-unicorn/no-lonely-if": {
+      "description": "Disallow `if` statements as the only statement in `if` blocks without `else`.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/no-lonely-if.md"
+    },
+    "eslint-plugin-unicorn/no-negated-condition": {
+      "description": "Disallow negated conditions.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/no-negated-condition.md"
+    },
+    "eslint-plugin-unicorn/no-nested-ternary": {
+      "description": "Disallow nested ternary expressions.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/no-nested-ternary.md"
+    },
+    "eslint-plugin-unicorn/no-new-array": {
+      "description": "Disallow `new Array()`.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/no-new-array.md"
+    },
+    "eslint-plugin-unicorn/no-new-buffer": {
+      "description": "Enforce the use of `Buffer.from()` and `Buffer.alloc()` instead of the deprecated `new Buffer()`.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/no-new-buffer.md"
+>>>>>>> refs/remotes/origin/main
     },
     "eslint-plugin-unicorn/no-null": {
       "oneOf": [
@@ -2672,7 +3254,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "checkStrictEquality": {
                   "type": "boolean",
@@ -2683,6 +3269,7 @@
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Disallow the use of the `null` literal.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v54.0.0/docs/rules/no-null.md"
     },
     "eslint-plugin-unicorn/no-object-as-default-parameter": {
@@ -2702,6 +3289,24 @@
     },
     "eslint-plugin-unicorn/no-this-assignment": {
       "description": "Disallow assigning `this` to a variable.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v54.0.0/docs/rules/no-this-assignment.md"
+=======
+      "description": "Disallow the use of the `null` literal.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/no-null.md"
+    },
+    "eslint-plugin-unicorn/no-object-as-default-parameter": {
+      "description": "Disallow the use of objects as default parameters.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/no-object-as-default-parameter.md"
+    },
+    "eslint-plugin-unicorn/no-process-exit": {
+      "description": "Disallow `process.exit()`.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/no-process-exit.md"
+    },
+    "eslint-plugin-unicorn/no-static-only-class": {
+      "description": "Disallow classes that only have static members.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/no-static-only-class.md"
+    },
+    "eslint-plugin-unicorn/no-thenable": {
+      "description": "Disallow `then` property.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/no-thenable.md"
+    },
+    "eslint-plugin-unicorn/no-this-assignment": {
+      "description": "Disallow assigning `this` to a variable.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/no-this-assignment.md"
+>>>>>>> refs/remotes/origin/main
     },
     "eslint-plugin-unicorn/no-typeof-undefined": {
       "oneOf": [
@@ -2728,7 +3333,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "checkGlobalVariables": {
                   "type": "boolean",
@@ -2739,6 +3348,7 @@
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Disallow comparing `undefined` using `typeof`.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v54.0.0/docs/rules/no-typeof-undefined.md"
     },
     "eslint-plugin-unicorn/no-unnecessary-await": {
@@ -2814,6 +3424,36 @@
     },
     "eslint-plugin-unicorn/no-useless-switch-case": {
       "description": "Disallow useless case in switch statements.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v54.0.0/docs/rules/no-useless-switch-case.md"
+=======
+      "description": "Disallow comparing `undefined` using `typeof`.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/no-typeof-undefined.md"
+    },
+    "eslint-plugin-unicorn/no-unnecessary-await": {
+      "description": "Disallow awaiting non-promise values.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/no-unnecessary-await.md"
+    },
+    "eslint-plugin-unicorn/no-unreadable-array-destructuring": {
+      "description": "Disallow unreadable array destructuring.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/no-unreadable-array-destructuring.md"
+    },
+    "eslint-plugin-unicorn/no-unreadable-iife": {
+      "description": "Disallow unreadable IIFEs.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/no-unreadable-iife.md"
+    },
+    "eslint-plugin-unicorn/no-unused-properties": {
+      "description": "Disallow unused object properties.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/no-unused-properties.md"
+    },
+    "eslint-plugin-unicorn/no-useless-fallback-in-spread": {
+      "description": "Disallow useless fallback when spreading in object literals.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/no-useless-fallback-in-spread.md"
+    },
+    "eslint-plugin-unicorn/no-useless-length-check": {
+      "description": "Disallow useless array length check.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/no-useless-length-check.md"
+    },
+    "eslint-plugin-unicorn/no-useless-promise-resolve-reject": {
+      "description": "Disallow returning/yielding `Promise.resolve/reject()` in async functions or promise callbacks\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/no-useless-promise-resolve-reject.md"
+    },
+    "eslint-plugin-unicorn/no-useless-spread": {
+      "description": "Disallow unnecessary spread.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/no-useless-spread.md"
+    },
+    "eslint-plugin-unicorn/no-useless-switch-case": {
+      "description": "Disallow useless case in switch statements.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/no-useless-switch-case.md"
+>>>>>>> refs/remotes/origin/main
     },
     "eslint-plugin-unicorn/no-useless-undefined": {
       "oneOf": [
@@ -2840,6 +3480,7 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
               "properties": {
                 "checkArguments": {
@@ -2847,12 +3488,19 @@
                 },
                 "checkArrowFunctionBody": {
                   "type": "boolean"
+=======
+              "additionalProperties": false,
+              "properties": {
+                "checkArguments": {
+                  "type": "boolean"
+>>>>>>> refs/remotes/origin/main
                 }
               }
             }
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Disallow useless `undefined`.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v54.0.0/docs/rules/no-useless-undefined.md"
     },
     "eslint-plugin-unicorn/no-zero-fractions": {
@@ -2860,6 +3508,15 @@
     },
     "eslint-plugin-unicorn/number-literal-case": {
       "description": "Enforce proper case for numeric literals.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v54.0.0/docs/rules/number-literal-case.md"
+=======
+      "description": "Disallow useless `undefined`.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/no-useless-undefined.md"
+    },
+    "eslint-plugin-unicorn/no-zero-fractions": {
+      "description": "Disallow number literals with zero fractions or dangling dots.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/no-zero-fractions.md"
+    },
+    "eslint-plugin-unicorn/number-literal-case": {
+      "description": "Enforce proper case for numeric literals.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/number-literal-case.md"
+>>>>>>> refs/remotes/origin/main
     },
     "eslint-plugin-unicorn/numeric-separators-style": {
       "oneOf": [
@@ -2886,7 +3543,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "binary": {
                   "type": "object",
@@ -2973,7 +3634,11 @@
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Enforce the style of numeric separators by correctly grouping digits.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v54.0.0/docs/rules/numeric-separators-style.md"
+=======
+      "description": "Enforce the style of numeric separators by correctly grouping digits.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/numeric-separators-style.md"
+>>>>>>> refs/remotes/origin/main
     },
     "eslint-plugin-unicorn/prefer-add-event-listener": {
       "oneOf": [
@@ -3000,7 +3665,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "excludedPackages": {
                   "type": "array",
@@ -3014,7 +3683,11 @@
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Prefer `.addEventListener()` and `.removeEventListener()` over `on`-functions.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v54.0.0/docs/rules/prefer-add-event-listener.md"
+=======
+      "description": "Prefer `.addEventListener()` and `.removeEventListener()` over `on`-functions.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/prefer-add-event-listener.md"
+>>>>>>> refs/remotes/origin/main
     },
     "eslint-plugin-unicorn/prefer-array-find": {
       "oneOf": [
@@ -3041,21 +3714,36 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
               "properties": {
                 "checkFromLast": {
                   "type": "boolean",
                   "default": true
+=======
+              "additionalProperties": false,
+              "properties": {
+                "checkFromLast": {
+                  "type": "boolean",
+                  "default": false
+>>>>>>> refs/remotes/origin/main
                 }
               }
             }
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Prefer `.find(…)` and `.findLast(…)` over the first or last element from `.filter(…)`.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v54.0.0/docs/rules/prefer-array-find.md"
     },
     "eslint-plugin-unicorn/prefer-array-flat-map": {
       "description": "Prefer `.flatMap(…)` over `.map(…).flat()`.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v54.0.0/docs/rules/prefer-array-flat-map.md"
+=======
+      "description": "Prefer `.find(…)` and `.findLast(…)` over the first or last element from `.filter(…)`.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/prefer-array-find.md"
+    },
+    "eslint-plugin-unicorn/prefer-array-flat-map": {
+      "description": "Prefer `.flatMap(…)` over `.map(…).flat()`.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/prefer-array-flat-map.md"
+>>>>>>> refs/remotes/origin/main
     },
     "eslint-plugin-unicorn/prefer-array-flat": {
       "oneOf": [
@@ -3082,7 +3770,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "functions": {
                   "type": "array",
@@ -3093,6 +3785,7 @@
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Prefer `Array#flat()` over legacy techniques to flatten arrays.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v54.0.0/docs/rules/prefer-array-flat.md"
     },
     "eslint-plugin-unicorn/prefer-array-index-of": {
@@ -3100,6 +3793,15 @@
     },
     "eslint-plugin-unicorn/prefer-array-some": {
       "description": "Prefer `.some(…)` over `.filter(…).length` check and `.{find,findLast,findIndex,findLastIndex}(…)`.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v54.0.0/docs/rules/prefer-array-some.md"
+=======
+      "description": "Prefer `Array#flat()` over legacy techniques to flatten arrays.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/prefer-array-flat.md"
+    },
+    "eslint-plugin-unicorn/prefer-array-index-of": {
+      "description": "Prefer `Array#{indexOf,lastIndexOf}()` over `Array#{findIndex,findLastIndex}()` when looking for the index of an item.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/prefer-array-index-of.md"
+    },
+    "eslint-plugin-unicorn/prefer-array-some": {
+      "description": "Prefer `.some(…)` over `.filter(…).length` check and `.{find,findLast}(…)`.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/prefer-array-some.md"
+>>>>>>> refs/remotes/origin/main
     },
     "eslint-plugin-unicorn/prefer-at": {
       "oneOf": [
@@ -3126,7 +3828,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "getLastElementFunctions": {
                   "type": "array",
@@ -3141,6 +3847,7 @@
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Prefer `.at()` method for index access and `String#charAt()`.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v54.0.0/docs/rules/prefer-at.md"
     },
     "eslint-plugin-unicorn/prefer-blob-reading-methods": {
@@ -3169,6 +3876,36 @@
     },
     "eslint-plugin-unicorn/prefer-event-target": {
       "description": "Prefer `EventTarget` over `EventEmitter`.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v54.0.0/docs/rules/prefer-event-target.md"
+=======
+      "description": "Prefer `.at()` method for index access and `String#charAt()`.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/prefer-at.md"
+    },
+    "eslint-plugin-unicorn/prefer-blob-reading-methods": {
+      "description": "Prefer `Blob#arrayBuffer()` over `FileReader#readAsArrayBuffer(…)` and `Blob#text()` over `FileReader#readAsText(…)`.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/prefer-blob-reading-methods.md"
+    },
+    "eslint-plugin-unicorn/prefer-code-point": {
+      "description": "Prefer `String#codePointAt(…)` over `String#charCodeAt(…)` and `String.fromCodePoint(…)` over `String.fromCharCode(…)`.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/prefer-code-point.md"
+    },
+    "eslint-plugin-unicorn/prefer-date-now": {
+      "description": "Prefer `Date.now()` to get the number of milliseconds since the Unix Epoch.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/prefer-date-now.md"
+    },
+    "eslint-plugin-unicorn/prefer-default-parameters": {
+      "description": "Prefer default parameters over reassignment.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/prefer-default-parameters.md"
+    },
+    "eslint-plugin-unicorn/prefer-dom-node-append": {
+      "description": "Prefer `Node#append()` over `Node#appendChild()`.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/prefer-dom-node-append.md"
+    },
+    "eslint-plugin-unicorn/prefer-dom-node-dataset": {
+      "description": "Prefer using `.dataset` on DOM elements over calling attribute methods.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/prefer-dom-node-dataset.md"
+    },
+    "eslint-plugin-unicorn/prefer-dom-node-remove": {
+      "description": "Prefer `childNode.remove()` over `parentNode.removeChild(childNode)`.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/prefer-dom-node-remove.md"
+    },
+    "eslint-plugin-unicorn/prefer-dom-node-text-content": {
+      "description": "Prefer `.textContent` over `.innerText`.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/prefer-dom-node-text-content.md"
+    },
+    "eslint-plugin-unicorn/prefer-event-target": {
+      "description": "Prefer `EventTarget` over `EventEmitter`.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/prefer-event-target.md"
+>>>>>>> refs/remotes/origin/main
     },
     "eslint-plugin-unicorn/prefer-export-from": {
       "oneOf": [
@@ -3195,7 +3932,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "ignoreUsedVariables": {
                   "type": "boolean",
@@ -3206,6 +3947,7 @@
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Prefer `export…from` when re-exporting.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v54.0.0/docs/rules/prefer-export-from.md"
     },
     "eslint-plugin-unicorn/prefer-includes": {
@@ -3240,6 +3982,42 @@
     },
     "eslint-plugin-unicorn/prefer-node-protocol": {
       "description": "Prefer using the `node:` protocol when importing Node.js builtin modules.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v54.0.0/docs/rules/prefer-node-protocol.md"
+=======
+      "description": "Prefer `export…from` when re-exporting.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/prefer-export-from.md"
+    },
+    "eslint-plugin-unicorn/prefer-includes": {
+      "description": "Prefer `.includes()` over `.indexOf()` and `Array#some()` when checking for existence or non-existence.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/prefer-includes.md"
+    },
+    "eslint-plugin-unicorn/prefer-json-parse-buffer": {
+      "description": "Prefer reading a JSON file as a buffer.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/prefer-json-parse-buffer.md"
+    },
+    "eslint-plugin-unicorn/prefer-keyboard-event-key": {
+      "description": "Prefer `KeyboardEvent#key` over `KeyboardEvent#keyCode`.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/prefer-keyboard-event-key.md"
+    },
+    "eslint-plugin-unicorn/prefer-logical-operator-over-ternary": {
+      "description": "Prefer using a logical operator over a ternary.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/prefer-logical-operator-over-ternary.md"
+    },
+    "eslint-plugin-unicorn/prefer-math-trunc": {
+      "description": "Enforce the use of `Math.trunc` instead of bitwise operators.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/prefer-math-trunc.md"
+    },
+    "eslint-plugin-unicorn/prefer-modern-dom-apis": {
+      "description": "Prefer `.before()` over `.insertBefore()`, `.replaceWith()` over `.replaceChild()`, prefer one of `.before()`, `.after()`, `.append()` or `.prepend()` over `insertAdjacentText()` and `insertAdjacentElement()`.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/prefer-modern-dom-apis.md"
+    },
+    "eslint-plugin-unicorn/prefer-modern-math-apis": {
+      "description": "Prefer modern `Math` APIs over legacy patterns.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/prefer-modern-math-apis.md"
+    },
+    "eslint-plugin-unicorn/prefer-module": {
+      "description": "Prefer JavaScript modules (ESM) over CommonJS.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/prefer-module.md"
+    },
+    "eslint-plugin-unicorn/prefer-native-coercion-functions": {
+      "description": "Prefer using `String`, `Number`, `BigInt`, `Boolean`, and `Symbol` directly.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/prefer-native-coercion-functions.md"
+    },
+    "eslint-plugin-unicorn/prefer-negative-index": {
+      "description": "Prefer negative index over `.length - index` when possible.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/prefer-negative-index.md"
+    },
+    "eslint-plugin-unicorn/prefer-node-protocol": {
+      "description": "Prefer using the `node:` protocol when importing Node.js builtin modules.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/prefer-node-protocol.md"
+>>>>>>> refs/remotes/origin/main
     },
     "eslint-plugin-unicorn/prefer-number-properties": {
       "oneOf": [
@@ -3266,6 +4044,7 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
               "properties": {
                 "checkInfinity": {
@@ -3274,6 +4053,12 @@
                 },
                 "checkNaN": {
                   "type": "boolean",
+=======
+              "additionalProperties": false,
+              "properties": {
+                "checkInfinity": {
+                  "type": "boolean",
+>>>>>>> refs/remotes/origin/main
                   "default": true
                 }
               }
@@ -3281,7 +4066,11 @@
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Prefer `Number` static properties over global ones.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v54.0.0/docs/rules/prefer-number-properties.md"
+=======
+      "description": "Prefer `Number` static properties over global ones.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/prefer-number-properties.md"
+>>>>>>> refs/remotes/origin/main
     },
     "eslint-plugin-unicorn/prefer-object-from-entries": {
       "oneOf": [
@@ -3308,7 +4097,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "functions": {
                   "type": "array",
@@ -3319,6 +4112,7 @@
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Prefer using `Object.fromEntries(…)` to transform a list of key-value pairs into an object.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v54.0.0/docs/rules/prefer-object-from-entries.md"
     },
     "eslint-plugin-unicorn/prefer-optional-catch-binding": {
@@ -3397,6 +4191,45 @@
         }
       ],
       "description": "Prefer using `structuredClone` to create a deep clone.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v54.0.0/docs/rules/prefer-structured-clone.md"
+=======
+      "description": "Prefer using `Object.fromEntries(…)` to transform a list of key-value pairs into an object.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/prefer-object-from-entries.md"
+    },
+    "eslint-plugin-unicorn/prefer-optional-catch-binding": {
+      "description": "Prefer omitting the `catch` binding parameter.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/prefer-optional-catch-binding.md"
+    },
+    "eslint-plugin-unicorn/prefer-prototype-methods": {
+      "description": "Prefer borrowing methods from the prototype instead of the instance.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/prefer-prototype-methods.md"
+    },
+    "eslint-plugin-unicorn/prefer-query-selector": {
+      "description": "Prefer `.querySelector()` over `.getElementById()`, `.querySelectorAll()` over `.getElementsByClassName()` and `.getElementsByTagName()`.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/prefer-query-selector.md"
+    },
+    "eslint-plugin-unicorn/prefer-reflect-apply": {
+      "description": "Prefer `Reflect.apply()` over `Function#apply()`.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/prefer-reflect-apply.md"
+    },
+    "eslint-plugin-unicorn/prefer-regexp-test": {
+      "description": "Prefer `RegExp#test()` over `String#match()` and `RegExp#exec()`.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/prefer-regexp-test.md"
+    },
+    "eslint-plugin-unicorn/prefer-set-has": {
+      "description": "Prefer `Set#has()` over `Array#includes()` when checking for existence or non-existence.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/prefer-set-has.md"
+    },
+    "eslint-plugin-unicorn/prefer-set-size": {
+      "description": "Prefer using `Set#size` instead of `Array#length`.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/prefer-set-size.md"
+    },
+    "eslint-plugin-unicorn/prefer-spread": {
+      "description": "Prefer the spread operator over `Array.from(…)`, `Array#concat(…)`, `Array#{slice,toSpliced}()` and `String#split('')`.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/prefer-spread.md"
+    },
+    "eslint-plugin-unicorn/prefer-string-replace-all": {
+      "description": "Prefer `String#replaceAll()` over regex searches with the global flag.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/prefer-string-replace-all.md"
+    },
+    "eslint-plugin-unicorn/prefer-string-slice": {
+      "description": "Prefer `String#slice()` over `String#substr()` and `String#substring()`.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/prefer-string-slice.md"
+    },
+    "eslint-plugin-unicorn/prefer-string-starts-ends-with": {
+      "description": "Prefer `String#startsWith()` & `String#endsWith()` over `RegExp#test()`.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/prefer-string-starts-ends-with.md"
+    },
+    "eslint-plugin-unicorn/prefer-string-trim-start-end": {
+      "description": "Prefer `String#trimStart()` / `String#trimEnd()` over `String#trimLeft()` / `String#trimRight()`.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/prefer-string-trim-start-end.md"
+>>>>>>> refs/remotes/origin/main
     },
     "eslint-plugin-unicorn/prefer-switch": {
       "oneOf": [
@@ -3423,7 +4256,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "minimumCases": {
                   "type": "integer",
@@ -3443,7 +4280,11 @@
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Prefer `switch` over multiple `else-if`.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v54.0.0/docs/rules/prefer-switch.md"
+=======
+      "description": "Prefer `switch` over multiple `else-if`.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/prefer-switch.md"
+>>>>>>> refs/remotes/origin/main
     },
     "eslint-plugin-unicorn/prefer-ternary": {
       "oneOf": [
@@ -3470,12 +4311,17 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Prefer ternary expressions over simple `if-else` statements.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v54.0.0/docs/rules/prefer-ternary.md"
     },
     "eslint-plugin-unicorn/prefer-top-level-await": {
@@ -3486,6 +4332,18 @@
     },
     "eslint-plugin-unicorn/prevent-abbreviations": {
       "description": "Prevent abbreviations.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v54.0.0/docs/rules/prevent-abbreviations.md"
+=======
+      "description": "Prefer ternary expressions over simple `if-else` statements.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/prefer-ternary.md"
+    },
+    "eslint-plugin-unicorn/prefer-top-level-await": {
+      "description": "Prefer top-level await over top-level promises and async function calls.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/prefer-top-level-await.md"
+    },
+    "eslint-plugin-unicorn/prefer-type-error": {
+      "description": "Enforce throwing `TypeError` in type checking conditions.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/prefer-type-error.md"
+    },
+    "eslint-plugin-unicorn/prevent-abbreviations": {
+      "description": "Prevent abbreviations.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/prevent-abbreviations.md"
+>>>>>>> refs/remotes/origin/main
     },
     "eslint-plugin-unicorn/relative-url-style": {
       "oneOf": [
@@ -3512,12 +4370,17 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Enforce consistent relative URL style.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v54.0.0/docs/rules/relative-url-style.md"
     },
     "eslint-plugin-unicorn/require-array-join-separator": {
@@ -3528,6 +4391,18 @@
     },
     "eslint-plugin-unicorn/require-post-message-target-origin": {
       "description": "Enforce using the `targetOrigin` argument with `window.postMessage()`.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v54.0.0/docs/rules/require-post-message-target-origin.md"
+=======
+      "description": "Enforce consistent relative URL style.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/relative-url-style.md"
+    },
+    "eslint-plugin-unicorn/require-array-join-separator": {
+      "description": "Enforce using the separator argument with `Array#join()`.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/require-array-join-separator.md"
+    },
+    "eslint-plugin-unicorn/require-number-to-fixed-digits-argument": {
+      "description": "Enforce using the digits argument with `Number#toFixed()`.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/require-number-to-fixed-digits-argument.md"
+    },
+    "eslint-plugin-unicorn/require-post-message-target-origin": {
+      "description": "Enforce using the `targetOrigin` argument with `window.postMessage()`.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/require-post-message-target-origin.md"
+>>>>>>> refs/remotes/origin/main
     },
     "eslint-plugin-unicorn/string-content": {
       "oneOf": [
@@ -3554,7 +4429,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "patterns": {
                   "type": "object",
@@ -3587,7 +4466,11 @@
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Enforce better string content.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v54.0.0/docs/rules/string-content.md"
+=======
+      "description": "Enforce better string content.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/string-content.md"
+>>>>>>> refs/remotes/origin/main
     },
     "eslint-plugin-unicorn/switch-case-braces": {
       "oneOf": [
@@ -3614,13 +4497,21 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Enforce consistent brace style for `case` clauses.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v54.0.0/docs/rules/switch-case-braces.md"
+=======
+      "description": "Enforce consistent brace style for `case` clauses.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/switch-case-braces.md"
+>>>>>>> refs/remotes/origin/main
     },
     "eslint-plugin-unicorn/template-indent": {
       "oneOf": [
@@ -3647,7 +4538,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "indent": {
                   "oneOf": [
@@ -3694,6 +4589,7 @@
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Fix whitespace-insensitive template indentation.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v54.0.0/docs/rules/template-indent.md"
     },
     "eslint-plugin-unicorn/text-encoding-identifier-case": {
@@ -3752,6 +4648,66 @@
     },
     "eslint-plugin-unicorn/regex-shorthand": {
       "description": "\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v54.0.0/docs/deprecated-rules.md#regex-shorthand"
+=======
+      "description": "Fix whitespace-insensitive template indentation.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/template-indent.md"
+    },
+    "eslint-plugin-unicorn/text-encoding-identifier-case": {
+      "description": "Enforce consistent case for text encoding identifiers.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/text-encoding-identifier-case.md"
+    },
+    "eslint-plugin-unicorn/throw-new-error": {
+      "description": "Require `new` when throwing an error.\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/rules/throw-new-error.md"
+    },
+    "eslint-plugin-unicorn/import-index": {
+      "description": "\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/deprecated-rules.md#import-index"
+    },
+    "eslint-plugin-unicorn/no-array-instanceof": {
+      "description": "\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/deprecated-rules.md#no-array-instanceof"
+    },
+    "eslint-plugin-unicorn/no-fn-reference-in-iterator": {
+      "description": "\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/deprecated-rules.md#no-fn-reference-in-iterator"
+    },
+    "eslint-plugin-unicorn/no-reduce": {
+      "description": "\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/deprecated-rules.md#no-reduce"
+    },
+    "eslint-plugin-unicorn/no-unsafe-regex": {
+      "description": "\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/deprecated-rules.md#no-unsafe-regex"
+    },
+    "eslint-plugin-unicorn/prefer-dataset": {
+      "description": "\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/deprecated-rules.md#prefer-dataset"
+    },
+    "eslint-plugin-unicorn/prefer-event-key": {
+      "description": "\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/deprecated-rules.md#prefer-event-key"
+    },
+    "eslint-plugin-unicorn/prefer-exponentiation-operator": {
+      "description": "\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/deprecated-rules.md#prefer-exponentiation-operator"
+    },
+    "eslint-plugin-unicorn/prefer-flat-map": {
+      "description": "\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/deprecated-rules.md#prefer-flat-map"
+    },
+    "eslint-plugin-unicorn/prefer-node-append": {
+      "description": "\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/deprecated-rules.md#prefer-node-append"
+    },
+    "eslint-plugin-unicorn/prefer-node-remove": {
+      "description": "\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/deprecated-rules.md#prefer-node-remove"
+    },
+    "eslint-plugin-unicorn/prefer-object-has-own": {
+      "description": "\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/deprecated-rules.md#prefer-object-has-own"
+    },
+    "eslint-plugin-unicorn/prefer-replace-all": {
+      "description": "\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/deprecated-rules.md#prefer-replace-all"
+    },
+    "eslint-plugin-unicorn/prefer-starts-ends-with": {
+      "description": "\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/deprecated-rules.md#prefer-starts-ends-with"
+    },
+    "eslint-plugin-unicorn/prefer-text-content": {
+      "description": "\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/deprecated-rules.md#prefer-text-content"
+    },
+    "eslint-plugin-unicorn/prefer-trim-start-end": {
+      "description": "\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/deprecated-rules.md#prefer-trim-start-end"
+    },
+    "eslint-plugin-unicorn/regex-shorthand": {
+      "description": "\nhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/v49.0.0/docs/deprecated-rules.md#regex-shorthand"
+>>>>>>> refs/remotes/origin/main
     },
     "eslint-plugin-vue/array-bracket-newline": {
       "oneOf": [
@@ -3778,7 +4734,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -3811,7 +4771,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -3847,7 +4811,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "before": {
                   "type": "boolean",
@@ -3889,7 +4857,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -3922,7 +4894,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "order": {
                   "type": "array",
@@ -4008,7 +4984,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -4041,7 +5021,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "order": {
                   "type": "array",
@@ -4093,7 +5077,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -4126,7 +5114,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "singleline": {
                   "enum": ["always", "never", "consistent", "ignore"]
@@ -4192,7 +5184,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -4225,7 +5221,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "ignoreDestructuring": {
                   "type": "boolean",
@@ -4287,7 +5287,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "before": {
                   "type": "boolean",
@@ -4329,7 +5333,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -4362,7 +5370,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "reportUnusedDisableDirectives": {
                   "type": "boolean"
@@ -4399,7 +5411,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -4432,7 +5448,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -4465,7 +5485,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -4498,7 +5522,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -4531,7 +5559,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "order": {
                   "type": "array",
@@ -4586,7 +5618,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -4619,7 +5655,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "order": {
                   "type": "array",
@@ -4628,6 +5668,7 @@
                       "defineEmits",
                       "defineProps",
                       "defineOptions",
+<<<<<<< HEAD
                       "defineSlots",
                       "defineModel"
                     ]
@@ -4636,6 +5677,12 @@
                 },
                 "defineExposeLast": {
                   "type": "boolean"
+=======
+                      "defineSlots"
+                    ]
+                  },
+                  "uniqueItems": true
+>>>>>>> refs/remotes/origin/main
                 }
               }
             }
@@ -4669,7 +5716,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -4702,7 +5753,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -4735,7 +5790,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "allowKeywords": {
                   "type": "boolean",
@@ -4752,6 +5811,7 @@
       ],
       "description": "Enforce dot notation whenever possible in `<template>`\nhttps://eslint.vuejs.org/rules/dot-notation.html"
     },
+<<<<<<< HEAD
     "eslint-plugin-vue/enforce-style-attribute": {
       "oneOf": [
         {
@@ -4795,6 +5855,8 @@
       ],
       "description": "enforce or forbid the use of the `scoped` and `module` attributes in SFC top level style tags\nhttps://eslint.vuejs.org/rules/enforce-style-attribute.html"
     },
+=======
+>>>>>>> refs/remotes/origin/main
     "eslint-plugin-vue/eqeqeq": {
       "description": "Require the use of `===` and `!==` in `<template>`\nhttps://eslint.vuejs.org/rules/eqeqeq.html"
     },
@@ -4823,7 +5885,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "multiline": {
                   "enum": ["below", "beside", "ignore"]
@@ -4866,7 +5932,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "button": {
                   "default": true,
@@ -4912,13 +5982,18 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "singleline": {
                   "enum": ["always", "never"]
                 },
                 "multiline": {
                   "enum": ["always", "never"]
+<<<<<<< HEAD
                 },
                 "selfClosingTag": {
                   "type": "object",
@@ -4932,6 +6007,8 @@
                   },
                   "additionalProperties": false,
                   "minProperties": 1
+=======
+>>>>>>> refs/remotes/origin/main
                 }
               }
             }
@@ -4965,7 +6042,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "startTag": {
                   "enum": ["always", "never"]
@@ -5008,7 +6089,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -5041,7 +6126,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -5074,7 +6163,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -5110,7 +6203,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -5143,7 +6240,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -5182,7 +6283,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -5215,7 +6320,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "before": {
                   "type": "boolean",
@@ -6079,7 +7188,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "extensions": {
                   "type": "array",
@@ -6126,7 +7239,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "singleline": {
                   "anyOf": [
@@ -6196,7 +7313,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -6229,7 +7350,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "style": {
                   "type": "integer",
@@ -6279,7 +7404,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "ignores": {
                   "type": "array",
@@ -6320,7 +7449,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "ignoreWhenEmpty": {
                   "type": "boolean"
@@ -6367,7 +7500,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -6400,7 +7537,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -6433,7 +7574,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "minLineOfMultilineProperty": {
                   "type": "number",
@@ -6471,7 +7616,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -6510,7 +7659,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "allowlist": {
                   "type": "array",
@@ -6572,7 +7725,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -6605,7 +7762,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "additionalDirectives": {
                   "type": "array",
@@ -6650,7 +7811,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "allow": {
                   "type": "array",
@@ -6692,7 +7857,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "checkLoops": {
                   "type": "boolean",
@@ -6760,7 +7929,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "allowVue3Compat": {
                   "type": "boolean"
@@ -6800,7 +7973,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "components": {
                   "type": "array",
@@ -6821,6 +7998,7 @@
       "description": "disallow deprecated `scope` attribute (in Vue.js 2.5.0+)\nhttps://eslint.vuejs.org/rules/no-deprecated-scope-attribute.html"
     },
     "eslint-plugin-vue/no-deprecated-slot-attribute": {
+<<<<<<< HEAD
       "oneOf": [
         {
           "$ref": "#/definitions/ruleNumber"
@@ -6859,6 +8037,8 @@
           ]
         }
       ],
+=======
+>>>>>>> refs/remotes/origin/main
       "description": "disallow deprecated `slot` attribute (in Vue.js 2.6.0+)\nhttps://eslint.vuejs.org/rules/no-deprecated-slot-attribute.html"
     },
     "eslint-plugin-vue/no-deprecated-slot-scope-attribute": {
@@ -6904,7 +8084,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "groups": {
                   "type": "array"
@@ -6947,7 +8131,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "allowCoexistClass": {
                   "type": "boolean"
@@ -6990,7 +8178,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "allowObjectPatternsAsParameters": {
                   "type": "boolean",
@@ -7040,7 +8232,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "skipComments": {
                   "type": "boolean",
@@ -7101,7 +8297,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "ignoreAccessible": {
                   "type": "boolean"
@@ -7141,7 +8341,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "ignoreProperties": {
                   "type": "boolean"
@@ -7187,7 +8391,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "shallowOnly": {
                   "type": "boolean"
@@ -7224,7 +8432,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "abrupt-closing-of-empty-comment": {
                   "type": "boolean"
@@ -7366,7 +8578,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "presets": {
                   "type": "array",
@@ -7430,7 +8646,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "autofix": {
                   "type": "boolean"
@@ -7467,7 +8687,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "disallowVueBuiltInComponents": {
                   "type": "boolean"
@@ -7507,7 +8731,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "reserved": {
                   "type": "array"
@@ -7547,7 +8775,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "vueVersion": {
                   "enum": [2, 3]
@@ -7592,9 +8824,12 @@
     "eslint-plugin-vue/no-restricted-v-bind": {
       "description": "disallow specific argument in `v-bind`\nhttps://eslint.vuejs.org/rules/no-restricted-v-bind.html"
     },
+<<<<<<< HEAD
     "eslint-plugin-vue/no-restricted-v-on": {
       "description": "disallow specific argument in `v-on`\nhttps://eslint.vuejs.org/rules/no-restricted-v-on.html"
     },
+=======
+>>>>>>> refs/remotes/origin/main
     "eslint-plugin-vue/no-root-v-if": {
       "description": "disallow `v-if` directives on root element\nhttps://eslint.vuejs.org/rules/no-root-v-if.html"
     },
@@ -7641,7 +8876,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "allowBinding": {
                   "type": "boolean"
@@ -7657,6 +8896,7 @@
       "description": "disallow `key` attribute on `<template>`\nhttps://eslint.vuejs.org/rules/no-template-key.html"
     },
     "eslint-plugin-vue/no-template-shadow": {
+<<<<<<< HEAD
       "oneOf": [
         {
           "$ref": "#/definitions/ruleNumber"
@@ -7695,6 +8935,8 @@
           ]
         }
       ],
+=======
+>>>>>>> refs/remotes/origin/main
       "description": "disallow variable declarations from shadowing variables declared in the outer scope\nhttps://eslint.vuejs.org/rules/no-template-shadow.html"
     },
     "eslint-plugin-vue/no-template-target-blank": {
@@ -7722,7 +8964,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "allowReferrer": {
                   "type": "boolean"
@@ -7768,7 +9014,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "ignorePatterns": {
                   "type": "array"
@@ -7805,7 +9055,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "ignores": {
                   "type": "array",
@@ -7846,7 +9100,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "version": {
                   "type": "string"
@@ -7868,9 +9126,13 @@
                       "v-bind-prop-modifier-shorthand",
                       "v-bind-attr-modifier",
                       "define-options",
+<<<<<<< HEAD
                       "define-slots",
                       "define-model",
                       "v-bind-same-name-shorthand"
+=======
+                      "define-slots"
+>>>>>>> refs/remotes/origin/main
                     ]
                   },
                   "uniqueItems": true
@@ -7907,7 +9169,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "ignoreWhenBindingPresent": {
                   "type": "boolean"
@@ -7919,9 +9185,12 @@
       ],
       "description": "disallow registering components that are not used inside templates\nhttps://eslint.vuejs.org/rules/no-unused-components.html"
     },
+<<<<<<< HEAD
     "eslint-plugin-vue/no-unused-emit-declarations": {
       "description": "disallow unused emit declarations\nhttps://eslint.vuejs.org/rules/no-unused-emit-declarations.html"
     },
+=======
+>>>>>>> refs/remotes/origin/main
     "eslint-plugin-vue/no-unused-properties": {
       "oneOf": [
         {
@@ -7947,7 +9216,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "groups": {
                   "type": "array",
@@ -8014,7 +9287,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "ignorePattern": {
                   "type": "string"
@@ -8057,7 +9334,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "allowUsingIterationVar": {
                   "type": "boolean"
@@ -8097,7 +9378,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "ignoreIncludesComment": {
                   "type": "boolean"
@@ -8140,7 +9425,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "ignoreIncludesComment": {
                   "type": "boolean"
@@ -8168,6 +9457,7 @@
       "description": "disallow adding an argument to `v-model` used in custom component\nhttps://eslint.vuejs.org/rules/no-v-model-argument.html"
     },
     "eslint-plugin-vue/no-v-text-v-html-on-component": {
+<<<<<<< HEAD
       "oneOf": [
         {
           "$ref": "#/definitions/ruleNumber"
@@ -8206,6 +9496,8 @@
           ]
         }
       ],
+=======
+>>>>>>> refs/remotes/origin/main
       "description": "disallow v-text / v-html on component\nhttps://eslint.vuejs.org/rules/no-v-text-v-html-on-component.html"
     },
     "eslint-plugin-vue/no-v-text": {
@@ -8239,7 +9531,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -8272,7 +9568,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -8305,7 +9605,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "allowAllPropertiesOnSameLine": {
                   "type": "boolean",
@@ -8353,7 +9657,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -8386,7 +9694,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "order": {
                   "type": "array"
@@ -8423,7 +9735,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -8456,7 +9772,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -8489,7 +9809,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -8537,7 +9861,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -8570,7 +9898,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -8612,7 +9944,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "disallowFunctionalComponentFunction": {
                   "type": "boolean"
@@ -8652,7 +9988,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "allowProps": {
                   "type": "boolean"
@@ -8664,9 +10004,12 @@
       ],
       "description": "require `emits` option with name triggered by `$emit()`\nhttps://eslint.vuejs.org/rules/require-explicit-emits.html"
     },
+<<<<<<< HEAD
     "eslint-plugin-vue/require-explicit-slots": {
       "description": "require slots to be explicitly defined\nhttps://eslint.vuejs.org/rules/require-explicit-slots.html"
     },
+=======
+>>>>>>> refs/remotes/origin/main
     "eslint-plugin-vue/require-expose": {
       "description": "require declare public properties using `expose`\nhttps://eslint.vuejs.org/rules/require-expose.html"
     },
@@ -8695,7 +10038,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "defineProps": {
                   "type": "string",
@@ -8752,7 +10099,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "type": {
                   "enum": ["JSDoc", "line", "block", "any"]
@@ -8816,7 +10167,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "treatUndefinedAsUnspecified": {
                   "type": "boolean"
@@ -8856,7 +10211,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -8892,7 +10251,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "ignoreWhenNoAttributes": {
                   "type": "boolean"
@@ -8906,6 +10269,7 @@
                     "type": "string"
                   },
                   "uniqueItems": true
+<<<<<<< HEAD
                 },
                 "externalIgnores": {
                   "type": "array",
@@ -8913,6 +10277,8 @@
                     "type": "string"
                   },
                   "uniqueItems": true
+=======
+>>>>>>> refs/remotes/origin/main
                 }
               }
             }
@@ -8946,7 +10312,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -8979,7 +10349,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -9012,7 +10386,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "int32Hint": {
                   "type": "boolean",
@@ -9050,7 +10428,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "words": {
                   "type": "boolean",
@@ -9101,7 +10483,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -9134,7 +10520,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -9170,7 +10560,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -9203,7 +10597,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -9211,9 +10609,12 @@
       ],
       "description": "enforce `v-for` directive's delimiter style\nhttps://eslint.vuejs.org/rules/v-for-delimiter-style.html"
     },
+<<<<<<< HEAD
     "eslint-plugin-vue/v-if-else-key": {
       "description": "require key attribute for conditionally rendered repeated components\nhttps://eslint.vuejs.org/rules/v-if-else-key.html"
     },
+=======
+>>>>>>> refs/remotes/origin/main
     "eslint-plugin-vue/v-on-event-hyphenation": {
       "oneOf": [
         {
@@ -9239,7 +10640,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -9272,7 +10677,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -9305,7 +10714,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -9338,7 +10751,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -9371,7 +10788,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -9458,7 +10879,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "modifiers": {
                   "type": "array"
@@ -9504,7 +10929,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "allowModifiers": {
                   "type": "boolean"
@@ -9547,7 +10976,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "default": {
                   "description": "The array type expected for mutable cases."
@@ -9590,7 +11023,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "ts-expect-error": {},
                 "ts-ignore": {},
@@ -9635,7 +11072,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "types": {
                   "type": "object",
@@ -9676,7 +11117,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -9709,7 +11154,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -9742,7 +11191,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -9775,7 +11228,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "exceptMethods": {
                   "type": "array",
@@ -9842,7 +11299,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "before": {
                   "type": "boolean",
@@ -9884,7 +11345,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -9925,6 +11390,7 @@
       ],
       "description": "Require or disallow the `Record` type\nhttps://typescript-eslint.io/rules/consistent-indexed-object-style"
     },
+<<<<<<< HEAD
     "@typescript-eslint/consistent-return": {
       "oneOf": [
         {
@@ -9963,6 +11429,8 @@
       ],
       "description": "Require `return` statements to either always or never specify values\nhttps://typescript-eslint.io/rules/consistent-return"
     },
+=======
+>>>>>>> refs/remotes/origin/main
     "@typescript-eslint/consistent-type-assertions": {
       "oneOf": [
         {
@@ -10021,7 +11489,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -10054,7 +11526,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "fixMixedExportsWithInlineTypeSpecifier": {
                   "type": "boolean"
@@ -10091,18 +11567,30 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
               "properties": {
+=======
+              "additionalProperties": false,
+              "properties": {
+                "prefer": {
+                  "type": "string",
+                  "enum": ["type-imports", "no-type-imports"]
+                },
+>>>>>>> refs/remotes/origin/main
                 "disallowTypeAnnotations": {
                   "type": "boolean"
                 },
                 "fixStyle": {
                   "type": "string",
                   "enum": ["separate-type-imports", "inline-type-imports"]
+<<<<<<< HEAD
                 },
                 "prefer": {
                   "type": "string",
                   "enum": ["type-imports", "no-type-imports"]
+=======
+>>>>>>> refs/remotes/origin/main
                 }
               }
             }
@@ -10139,7 +11627,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "allowKeywords": {
                   "type": "boolean",
@@ -10193,7 +11685,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "allowConciseArrowFunctionExpressionsStartingWithVoid": {
                   "description": "Whether to allow arrow functions that start with the `void` keyword.",
@@ -10262,7 +11758,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "accessibility": {},
                 "overrides": {
@@ -10314,7 +11814,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "allowArgumentsExplicitlyTypedAsAny": {
                   "description": "Whether to ignore arguments that are explicitly typed as `any`.",
@@ -10374,7 +11878,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -10410,7 +11918,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -10443,7 +11955,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "before": {
                   "type": "boolean",
@@ -11319,7 +12835,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "beforeBlockComment": {
                   "type": "boolean",
@@ -11425,7 +12945,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -11458,7 +12982,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "maximum": {
                   "type": "integer",
@@ -11503,7 +13031,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "multiline": {
                   "type": "object",
@@ -11569,7 +13101,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "default": {},
                 "classes": {},
@@ -11608,7 +13144,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -11622,9 +13162,12 @@
     "@typescript-eslint/no-array-constructor": {
       "description": "Disallow generic `Array` constructors\nhttps://typescript-eslint.io/rules/no-array-constructor"
     },
+<<<<<<< HEAD
     "@typescript-eslint/no-array-delete": {
       "description": "Disallow using the `delete` operator on array values\nhttps://typescript-eslint.io/rules/no-array-delete"
     },
+=======
+>>>>>>> refs/remotes/origin/main
     "@typescript-eslint/no-base-to-string": {
       "oneOf": [
         {
@@ -11650,7 +13193,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "ignoredTypeNames": {
                   "type": "array",
@@ -11693,7 +13240,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "ignoreArrowShorthand": {
                   "type": "boolean"
@@ -11739,7 +13290,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "ignoreIntersections": {
                   "type": "boolean"
@@ -11782,7 +13337,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "allow": {
                   "type": "array",
@@ -11839,7 +13398,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "allowSingleExtends": {
                   "type": "boolean"
@@ -11876,7 +13439,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "fixToUnknown": {
                   "description": "Whether to enable auto-fixing in which the `any` type is converted to the `unknown` type.",
@@ -11927,7 +13494,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "allowConstructorOnly": {
                   "description": "Whether to allow extraneous classes that contain only a constructor.",
@@ -11977,7 +13548,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "ignoreVoid": {
                   "description": "Whether to ignore `void` expressions.",
@@ -11986,6 +13561,7 @@
                 "ignoreIIFE": {
                   "description": "Whether to ignore async IIFEs (Immediately Invoked Function Expressions).",
                   "type": "boolean"
+<<<<<<< HEAD
                 },
                 "allowForKnownSafePromises": {
                   "type": "array",
@@ -12080,6 +13656,8 @@
                       }
                     ]
                   }
+=======
+>>>>>>> refs/remotes/origin/main
                 }
               }
             }
@@ -12122,7 +13700,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "ignoreParameters": {
                   "type": "boolean"
@@ -12162,7 +13744,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "capIsConstructor": {
                   "type": "boolean",
@@ -12200,7 +13786,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "allowInGenericTypeArguments": {
                   "oneOf": [
@@ -12257,7 +13847,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "detectObjects": {
                   "type": "boolean",
@@ -12338,7 +13932,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "checkNever": {
                   "type": "boolean",
@@ -12379,7 +13977,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "checksConditionals": {
                   "type": "boolean"
@@ -12450,7 +14052,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "allowDeclarations": {
                   "description": "Whether to allow `declare` with custom TypeScript namespaces.",
@@ -12501,7 +14107,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "builtinGlobals": {
                   "type": "boolean"
@@ -12520,6 +14130,7 @@
       "description": "Disallow members of unions and intersections that do nothing or override type information\nhttps://typescript-eslint.io/rules/no-redundant-type-constituents"
     },
     "@typescript-eslint/no-require-imports": {
+<<<<<<< HEAD
       "oneOf": [
         {
           "$ref": "#/definitions/ruleNumber"
@@ -12558,6 +14169,8 @@
           ]
         }
       ],
+=======
+>>>>>>> refs/remotes/origin/main
       "description": "Disallow invocation of `require()`\nhttps://typescript-eslint.io/rules/no-require-imports"
     },
     "@typescript-eslint/no-restricted-imports": {
@@ -12588,7 +14201,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "builtinGlobals": {
                   "type": "boolean"
@@ -12644,7 +14261,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "allowDestructuring": {
                   "description": "Whether to ignore destructurings, such as `const { props, state } = this`.",
@@ -12689,7 +14310,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "allowThrowingAny": {
                   "type": "boolean"
@@ -12729,7 +14354,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "allowAliases": {
                   "description": "Whether to allow direct one-to-one type aliases."
@@ -12787,7 +14416,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "allowComparingNullableBooleansToTrue": {
                   "description": "Whether to allow comparisons between nullable boolean variables and `true`.",
@@ -12829,7 +14462,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "allowConstantLoopConditions": {
                   "description": "Whether to ignore constant loop conditions, such as `while (true)`.",
@@ -12849,9 +14486,12 @@
     "@typescript-eslint/no-unnecessary-qualifier": {
       "description": "Disallow unnecessary namespace qualifiers\nhttps://typescript-eslint.io/rules/no-unnecessary-qualifier"
     },
+<<<<<<< HEAD
     "@typescript-eslint/no-unnecessary-template-expression": {
       "description": "Disallow unnecessary template expressions\nhttps://typescript-eslint.io/rules/no-unnecessary-template-expression"
     },
+=======
+>>>>>>> refs/remotes/origin/main
     "@typescript-eslint/no-unnecessary-type-arguments": {
       "description": "Disallow type arguments that are equal to the default\nhttps://typescript-eslint.io/rules/no-unnecessary-type-arguments"
     },
@@ -12880,7 +14520,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "typesToIgnore": {
                   "description": "A list of type names to ignore.",
@@ -12948,7 +14592,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "allowShortCircuit": {
                   "type": "boolean",
@@ -12998,8 +14646,45 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
               "properties": {}
+=======
+              "additionalProperties": false,
+              "properties": {
+                "vars": {
+                  "type": "string",
+                  "enum": ["all", "local"]
+                },
+                "varsIgnorePattern": {
+                  "type": "string",
+                  "format": "regex"
+                },
+                "args": {
+                  "type": "string",
+                  "enum": ["after-used", "all", "none"]
+                },
+                "argsIgnorePattern": {
+                  "type": "string",
+                  "format": "regex"
+                },
+                "caughtErrors": {
+                  "type": "string",
+                  "enum": ["none", "all"]
+                },
+                "caughtErrorsIgnorePattern": {
+                  "type": "string",
+                  "format": "regex"
+                },
+                "destructuredArrayIgnorePattern": {
+                  "type": "string",
+                  "format": "regex"
+                },
+                "ignoreRestSiblings": {
+                  "type": "boolean"
+                }
+              }
+>>>>>>> refs/remotes/origin/main
             }
           ]
         }
@@ -13031,7 +14716,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -13045,6 +14734,7 @@
     "@typescript-eslint/no-useless-empty-export": {
       "description": "Disallow empty exports that don't change anything in a module file\nhttps://typescript-eslint.io/rules/no-useless-empty-export"
     },
+<<<<<<< HEAD
     "@typescript-eslint/no-useless-template-literals": {
       "description": "Disallow unnecessary template expressions\nhttps://typescript-eslint.io/rules/no-useless-template-literals"
     },
@@ -13087,6 +14777,9 @@
           ]
         }
       ],
+=======
+    "@typescript-eslint/no-var-requires": {
+>>>>>>> refs/remotes/origin/main
       "description": "Disallow `require` statements except in import statements\nhttps://typescript-eslint.io/rules/no-var-requires"
     },
     "@typescript-eslint/non-nullable-type-assertion-style": {
@@ -13117,7 +14810,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -13125,6 +14822,7 @@
       ],
       "description": "Enforce consistent spacing inside braces\nhttps://typescript-eslint.io/rules/object-curly-spacing"
     },
+<<<<<<< HEAD
     "@typescript-eslint/only-throw-error": {
       "oneOf": [
         {
@@ -13165,6 +14863,8 @@
       ],
       "description": "Disallow throwing non-`Error` values as exceptions\nhttps://typescript-eslint.io/rules/only-throw-error"
     },
+=======
+>>>>>>> refs/remotes/origin/main
     "@typescript-eslint/padding-line-between-statements": {
       "description": "Require or disallow padding lines between statements\nhttps://typescript-eslint.io/rules/padding-line-between-statements"
     },
@@ -13193,7 +14893,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "allow": {
                   "type": "array",
@@ -13238,7 +14942,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -13249,9 +14957,12 @@
     "@typescript-eslint/prefer-enum-initializers": {
       "description": "Require each enum member value to be explicitly initialized\nhttps://typescript-eslint.io/rules/prefer-enum-initializers"
     },
+<<<<<<< HEAD
     "@typescript-eslint/prefer-find": {
       "description": "Enforce the use of Array.prototype.find() over Array.prototype.filter() followed by [0] when looking for a single result\nhttps://typescript-eslint.io/rules/prefer-find"
     },
+=======
+>>>>>>> refs/remotes/origin/main
     "@typescript-eslint/prefer-for-of": {
       "description": "Enforce the use of `for-of` loop over the standard `for` loop where possible\nhttps://typescript-eslint.io/rules/prefer-for-of"
     },
@@ -13286,7 +14997,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "allowBitwiseExpressions": {
                   "type": "boolean"
@@ -13326,7 +15041,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "allowRuleToRunWithoutStrictNullChecksIKnowWhatIAmDoing": {
                   "type": "boolean"
@@ -13397,7 +15116,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "checkAny": {
                   "type": "boolean",
@@ -13438,6 +15161,7 @@
       ],
       "description": "Enforce using concise optional chain expressions instead of chained logical ands, negated logical ors, or empty objects\nhttps://typescript-eslint.io/rules/prefer-optional-chain"
     },
+<<<<<<< HEAD
     "@typescript-eslint/prefer-promise-reject-errors": {
       "oneOf": [
         {
@@ -13475,6 +15199,8 @@
       ],
       "description": "Require using Error objects as Promise rejection reasons\nhttps://typescript-eslint.io/rules/prefer-promise-reject-errors"
     },
+=======
+>>>>>>> refs/remotes/origin/main
     "@typescript-eslint/prefer-readonly": {
       "oneOf": [
         {
@@ -13500,7 +15226,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "onlyInlineLambdas": {
                   "type": "boolean"
@@ -13537,7 +15267,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "allow": {
                   "type": "array",
@@ -13659,6 +15393,7 @@
       "description": "Enforce that `this` is used when only `this` type is returned\nhttps://typescript-eslint.io/rules/prefer-return-this-type"
     },
     "@typescript-eslint/prefer-string-starts-ends-with": {
+<<<<<<< HEAD
       "oneOf": [
         {
           "$ref": "#/definitions/ruleNumber"
@@ -13695,6 +15430,8 @@
           ]
         }
       ],
+=======
+>>>>>>> refs/remotes/origin/main
       "description": "Enforce using `String#startsWith` and `String#endsWith` over other equivalent methods of checking substrings\nhttps://typescript-eslint.io/rules/prefer-string-starts-ends-with"
     },
     "@typescript-eslint/prefer-ts-expect-error": {
@@ -13725,7 +15462,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "allowAny": {
                   "description": "Whether to consider `any` and `unknown` to be Promises.",
@@ -13782,7 +15523,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -13815,7 +15560,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "ignoreStringArrays": {
                   "description": "Whether to ignore arrays in which all elements are strings.",
@@ -13826,10 +15575,17 @@
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Require `Array#sort` and `Array#toSorted` calls to always provide a `compareFunction`\nhttps://typescript-eslint.io/rules/require-array-sort-compare"
     },
     "@typescript-eslint/require-await": {
       "description": "Disallow async functions which do not return promises and have no `await` expression\nhttps://typescript-eslint.io/rules/require-await"
+=======
+      "description": "Require `Array#sort` calls to always provide a `compareFunction`\nhttps://typescript-eslint.io/rules/require-array-sort-compare"
+    },
+    "@typescript-eslint/require-await": {
+      "description": "Disallow async functions which have no `await` expression\nhttps://typescript-eslint.io/rules/require-await"
+>>>>>>> refs/remotes/origin/main
     },
     "@typescript-eslint/restrict-plus-operands": {
       "oneOf": [
@@ -13856,7 +15612,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "allowAny": {
                   "description": "Whether to allow `any` typed values.",
@@ -13914,16 +15674,23 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "allowAny": {
                   "description": "Whether to allow `any` typed values in template expressions.",
                   "type": "boolean"
                 },
+<<<<<<< HEAD
                 "allowArray": {
                   "description": "Whether to allow `array` typed values in template expressions.",
                   "type": "boolean"
                 },
+=======
+>>>>>>> refs/remotes/origin/main
                 "allowBoolean": {
                   "description": "Whether to allow `boolean` typed values in template expressions.",
                   "type": "boolean"
@@ -13976,13 +15743,21 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
         }
       ],
+<<<<<<< HEAD
       "description": "Enforce consistent awaiting of returned promises\nhttps://typescript-eslint.io/rules/return-await"
+=======
+      "description": "Enforce consistent returning of awaited values\nhttps://typescript-eslint.io/rules/return-await"
+>>>>>>> refs/remotes/origin/main
     },
     "@typescript-eslint/semi": {
       "description": "Require or disallow semicolons instead of ASI\nhttps://typescript-eslint.io/rules/semi"
@@ -14012,7 +15787,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "checkIntersections": {
                   "description": "Whether to check intersection types.",
@@ -14022,10 +15801,13 @@
                   "description": "Whether to check union types.",
                   "type": "boolean"
                 },
+<<<<<<< HEAD
                 "caseSensitive": {
                   "description": "Whether to sort using case sensitive sorting.",
                   "type": "boolean"
                 },
+=======
+>>>>>>> refs/remotes/origin/main
                 "groupOrder": {
                   "description": "Ordering of the groups.",
                   "type": "array",
@@ -14079,7 +15861,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -14112,7 +15898,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {}
             }
           ]
@@ -14145,7 +15935,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "int32Hint": {
                   "type": "boolean",
@@ -14183,7 +15977,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "allowString": {
                   "type": "boolean"
@@ -14244,12 +16042,17 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
               "properties": {
                 "allowDefaultCaseForExhaustiveSwitch": {
                   "description": "If 'true', allow 'default' cases on switch statements with exhaustive cases.",
                   "type": "boolean"
                 },
+=======
+              "additionalProperties": false,
+              "properties": {
+>>>>>>> refs/remotes/origin/main
                 "requireDefaultForNonUnion": {
                   "description": "If 'true', require a 'default' clause for switches on non-union types.",
                   "type": "boolean"
@@ -14286,7 +16089,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "lib": {
                   "type": "string",
@@ -14332,7 +16139,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "before": {
                   "type": "boolean"
@@ -14384,7 +16195,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "arrayDestructuring": {
                   "type": "boolean"
@@ -14442,7 +16257,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "ignoreStatic": {
                   "description": "Whether to skip checking whether `static` methods are correctly bound.",
@@ -14480,7 +16299,11 @@
             },
             {
               "type": "object",
+<<<<<<< HEAD
               "additionalProperties": true,
+=======
+              "additionalProperties": false,
+>>>>>>> refs/remotes/origin/main
               "properties": {
                 "ignoreDifferentlyNamedParameters": {
                   "description": "Whether two parameters with different names at the same index should be considered different even if their types are the same.",
@@ -14492,9 +16315,12 @@
         }
       ],
       "description": "Disallow two overloads that could be unified into one with a union or an optional/rest parameter\nhttps://typescript-eslint.io/rules/unified-signatures"
+<<<<<<< HEAD
     },
     "@typescript-eslint/use-unknown-in-catch-callback-variable": {
       "description": "Enforce typing arguments in `.catch()` callbacks as `unknown`\nhttps://typescript-eslint.io/rules/use-unknown-in-catch-callback-variable"
+=======
+>>>>>>> refs/remotes/origin/main
     }
   }
 }

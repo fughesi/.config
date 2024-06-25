@@ -10,3 +10,10 @@ unsetopt CASE_GLOB
 # history file
 setopt appendhistory
 
+<<<<<<< HEAD
+=======
+# some useful options
+# setopt autocd extendedglob nomatch menu_complete
+# setopt interactive_comments
+
+>>>>>>> refs/remotes/origin/main

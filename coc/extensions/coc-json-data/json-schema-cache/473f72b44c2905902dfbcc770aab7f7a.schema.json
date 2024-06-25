@@ -616,7 +616,11 @@
         }
       }
     },
+<<<<<<< HEAD
     "bundleDependencies": {
+=======
+    "bundledDependencies": {
+>>>>>>> refs/remotes/origin/main
       "description": "Array of package names that will be bundled when publishing the package.",
       "oneOf": [
         {
@@ -630,8 +634,13 @@
         }
       ]
     },
+<<<<<<< HEAD
     "bundledDependencies": {
       "description": "DEPRECATED: This field is honored, but \"bundleDependencies\" is the correct field name.",
+=======
+    "bundleDependencies": {
+      "description": "DEPRECATED: This field is honored, but \"bundledDependencies\" is the correct field name.",
+>>>>>>> refs/remotes/origin/main
       "oneOf": [
         {
           "type": "array",
