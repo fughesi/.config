@@ -1,5 +1,4 @@
-colorscheme habamax 
-
+colorscheme retrobox
 
 call plug#begin('~/.config/vim/plugins')
   Plug 'junegunn/goyo.vim'
@@ -13,7 +12,6 @@ call plug#begin('~/.config/vim/plugins')
   Plug 'christoomey/vim-tmux-navigator'
   Plug 'rust-lang/rust.vim'
 call plug#end()
-
 
 " coc config ===========
 let g:rustfmt_autosave = 1
@@ -41,7 +39,13 @@ function! ShowDocumentation()
 endfunction
 " coc config ===========
 
-
+" netrw config ===========
+let g:netrw_list_hide= '^\.git$,^\.DS_Store$'
+let g:netrw_liststyle = 3
+let g:netrw_winsize = 20
+let g:netrw_banner = 0
+set path+=**
+" netrw config ===========
 
 " buffers and splits
 filetype plugin indent on
@@ -117,11 +121,6 @@ set noerrorbells
 set visualbell
 set ttyfast
 set signcolumn=yes
-let g:netrw_list_hide='.*\.swp$,\~$,\.orig$'
-
-
-" center vertically in insert mode
-inoremap zz <Esc>zzi
 
 " move to beginning or end of line
 inoremap <C-d> <esc>0i
@@ -155,7 +154,7 @@ nnoremap + <C-a>
 nnoremap - <C-x>
 
 " window management
-nnoremap qw :Explore<CR> 
+nnoremap <c-e> :Lexplore<CR> 
 
 nnoremap <space>to :tabnew<CR>
 nnoremap <space>tx :close<CR>
@@ -165,6 +164,11 @@ nnoremap <S-b> :bnext<CR>
 nnoremap <C-b> :bprevious<CR>
 nnoremap bd :bd<CR>
 nnoremap bad :%bdelete<CR> 
+
+nnoremap <silent> w<left> :vertical resize +20<cr>
+nnoremap <silent> w<right> :vertical resize -20<cr>
+nnoremap <silent> w<up> :resize +20<cr>
+nnoremap <silent> w<down> :resize -20<cr>
 
 " Tmux navigation
 nnoremap <silent> <c-h> :<C-U>TmuxNavigateLeft<cr>
@@ -183,5 +187,4 @@ nnoremap <silent> gi <Plug>(coc-implementation)
 nnoremap <silent> gr <Plug>(coc-references)
 nnoremap <space>rn <Plug>(coc-rename)
 nnoremap <silent> <space>k :call CocActionAsync('doHover')<cr>
-
 

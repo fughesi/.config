@@ -5,3 +5,6 @@
     br = branch
     unstage = reset HEAD --
     last = log -1 HEAD
+[user]
+	name = Camillieri
+	email = camillieri@pm.me
