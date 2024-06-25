@@ -1,7 +1,8 @@
-node_modules
-coc/extensions
+coc/extensions/node_modules
+coc/extensions/package-lock.json
 zsh/plugins
 vim/backups
 vim/plugins
 coc/memos.json
+node_modules
 
