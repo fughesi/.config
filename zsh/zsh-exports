@@ -27,29 +27,13 @@ export PATH=$HOME/.cargo/bin:$PATH
 export PATH="$HOME/.local/share/neovim/bin":$PATH
 export PATH="/usr/local/mysql-8.0.31-macos12-x86_64/bin":$PATH
 
-<<<<<<< HEAD
 export semester=$HOME/Documents/School/Spring_24/
 export php=$HOME/Documents/School/Spring_24/web\ programming/XAMPP/htdocs/
-export website=$HOME/Documents/School/Spring_24/web\ creation/website
-=======
-export semester=$HOME/Documents/School/Summer_24
-export php=$HOME/Documents/School/Spring_24/web\ programming/XAMPP/htdocs/
 export website=$HOME/Sites/bloominggeckos
->>>>>>> refs/remotes/origin/main
 export vim=$HOME/.config/vim
-export nvim=$HOME/.config/nvim
 export zsh=$HOME/.config/zsh
 
 
-<<<<<<< HEAD
 export XAMPP_HOME=/Applications/XAMPP
 export PATH=${XAMPP_HOME}/bin:${PATH}
 export PATH
-=======
-# export XAMPP_HOME=/Applications/XAMPP
-# export PATH=${XAMPP_HOME}/bin:${PATH}
-# export PATH
->>>>>>> refs/remotes/origin/main
-
-export EDITOR="vim"
-export BROWSER="brave"

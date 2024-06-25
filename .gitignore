@@ -1,2 +1,7 @@
 node_modules
+coc/extensions
+zsh/plugins
+vim/backups
+vim/plugins
+coc/memos.json
 
