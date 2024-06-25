@@ -2,7 +2,7 @@ colorscheme retrobox
 
 call plug#begin('~/.config/vim/plugins')
   Plug 'junegunn/goyo.vim'
-  Plug 'junegunn/fzf'
+  Plug 'tmux-plugins/vim-tmux'
   Plug 'tpope/vim-surround'
   Plug 'PotatoesMaster/i3-vim-syntax'
   Plug 'jreybert/vimagit'
@@ -11,10 +11,12 @@ call plug#begin('~/.config/vim/plugins')
   Plug 'tomtom/tcomment_vim'
   Plug 'christoomey/vim-tmux-navigator'
   Plug 'rust-lang/rust.vim'
+  Plug 'junegunn/fzf', {'dir': '~/.fzf','do': './install --all'}
+  Plug 'junegunn/fzf.vim' " needed for previews
+  " Plug 'antoinemadec/coc-fzf', {'branch': 'release'}
 call plug#end()
 
 " coc config ===========
-let g:rustfmt_autosave = 1
 let g:coc_snippet_next = '<tab>'
 let g:coc_node_path = '/usr/local/bin/node'
 command! -nargs=0 Prettier :CocCommand prettier.forceFormatDocument
@@ -40,7 +42,8 @@ endfunction
 " coc config ===========
 
 " netrw config ===========
-let g:netrw_list_hide= '^\.git$,^\.DS_Store$'
+let g:netrw_list_hide='.*\.swp$,\~$,\.orig,^\.DS_Store$,^\.git$'
+let g:netrw_sizestyle="h"
 let g:netrw_liststyle = 3
 let g:netrw_winsize = 20
 let g:netrw_banner = 0
@@ -121,8 +124,6 @@ set noerrorbells
 set visualbell
 set ttyfast
 set signcolumn=yes
-let g:netrw_list_hide='.*\.swp$,\~$,\.orig$'
-
 
 
 " move to beginning or end of line
