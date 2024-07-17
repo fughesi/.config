@@ -4,12 +4,12 @@
       "http://json.schemastore.org/prettierrc": {
         "etag": "\"079e10ba4ada1:0\"",
         "fileName": "b2ed7a7b6c79e58baf94e4ce160282de.schema.json",
-        "updateTime": 1719188858644
+        "updateTime": 1720430267940
       },
       "https://json.schemastore.org/package.json": {
         "etag": "\"807a7b1d2ebcda1:0\"",
         "fileName": "473f72b44c2905902dfbcc770aab7f7a.schema.json",
-        "updateTime": 1719188858846
+        "updateTime": 1720430268014
       },
       "https://json.schemastore.org/jscpd.json": {
         "etag": "\"09e8ecc624ada1:0\"",
@@ -49,4 +49,3 @@
     }
   }
 }
-

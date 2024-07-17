@@ -1,19 +1,17 @@
 colorscheme retrobox
 
 call plug#begin('~/.config/vim/plugins')
-  Plug 'junegunn/goyo.vim'
-  Plug 'tmux-plugins/vim-tmux'
-  Plug 'tpope/vim-surround'
-  Plug 'PotatoesMaster/i3-vim-syntax'
   Plug 'jreybert/vimagit'
-  Plug 'terryma/vim-multiple-cursors'
+  Plug 'junegunn/fzf.vim'
   Plug 'neoclide/coc.nvim'
-  Plug 'tomtom/tcomment_vim'
-  Plug 'christoomey/vim-tmux-navigator'
   Plug 'rust-lang/rust.vim'
+  Plug 'tpope/vim-surround'
+  Plug 'tomtom/tcomment_vim'
+  Plug 'tmux-plugins/vim-tmux'
+  Plug 'PotatoesMaster/i3-vim-syntax'
+  Plug 'terryma/vim-multiple-cursors'
+  Plug 'christoomey/vim-tmux-navigator'
   Plug 'junegunn/fzf', {'dir': '~/.fzf','do': './install --all'}
-  Plug 'junegunn/fzf.vim' " needed for previews
-  " Plug 'antoinemadec/coc-fzf', {'branch': 'release'}
 call plug#end()
 
 " coc config ===========
@@ -39,7 +37,6 @@ function! ShowDocumentation()
     call feedkeys('K', 'in')
   endif
 endfunction
-" coc config ===========
 
 " netrw config ===========
 let g:netrw_list_hide='.*\.swp$,\~$,\.orig,^\.DS_Store$,^\.git$'
@@ -48,7 +45,6 @@ let g:netrw_liststyle = 3
 let g:netrw_winsize = 20
 let g:netrw_banner = 0
 set path+=**
-" netrw config ===========
 
 " buffers and splits
 filetype plugin indent on
@@ -160,10 +156,6 @@ nnoremap - <C-x>
 " window management
 nnoremap <c-e> :Lexplore<CR> 
 
-nnoremap <space>to :tabnew<CR>
-nnoremap <space>tx :close<CR>
-nnoremap <S-t> :tabn<CR>
-
 nnoremap <S-b> :bnext<CR>
 nnoremap <C-b> :bprevious<CR>
 nnoremap bd :bd<CR>
@@ -182,7 +174,6 @@ nnoremap <silent> <c-l> :<C-U>TmuxNavigateRight<cr>
 nnoremap <silent> <c-\> :<C-U>TmuxNavigatePrevious<cr>
 
 " Plugin specific
-nnoremap <space>f :Goyo<CR>
 nnoremap ;f :FZF -e<CR>
 nnoremap <silent> ;g <Plug>(coc-diagnostic-next)
 nnoremap <silent> gd <Plug>(coc-definition)
@@ -191,4 +182,3 @@ nnoremap <silent> gi <Plug>(coc-implementation)
 nnoremap <silent> gr <Plug>(coc-references)
 nnoremap <space>rn <Plug>(coc-rename)
 nnoremap <silent> <space>k :call CocActionAsync('doHover')<cr>
-
