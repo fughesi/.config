@@ -1,26 +1,20 @@
-#!/bin/sh
-
-# uncomment function to check performance
-# zmodload zsh/zprof
+#!/bin/zsh
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 eval "$(zoxide init zsh)"
 
 source <(fzf --zsh)
 source "$ZDOTDIR/zsh-functions"
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# no beeping
-unsetopt BEEP
+# options
+unsetopt BEEP # no beeping
+unsetopt CASE_GLOB # case insensitivity
+setopt appendhistory # history file
 
-# case sensitivity = off
-unsetopt CASE_GLOB
-
-# history file
-setopt appendhistory
-
-# case insensitivity
-compctl -M '' 'm:{a-z}={A-Z}' 
+#vi mode
+bindkey -v
+autoload edit-command-line; zle -N edit-command-line
+bindkey '^e' edit-command-line # use cntrl + e to open cmd in vim
 
 # Colors
 autoload -Uz vcs_info
@@ -29,6 +23,7 @@ autoload -U colors && colors
 # Plugins
 zsh_add_plugin "lsd-rs/lsd"
 zsh_add_plugin "zsh-users/zsh-autosuggestions"
+zsh_add_plugin "marlonrichert/zsh-autocomplete"
 zsh_add_plugin "hlissner/zsh-autopair"
 zsh_add_plugin "ajeetdsouza/zoxide"
 
@@ -42,16 +37,6 @@ alias cp="cp -i"
 alias mv='mv -i'
 alias rm='rm -i'
 
-# easier to read disk
-alias df='df -h'
-alias free='free -m'
-
-# get top process eating memory
-alias psmem='ps aux | sort -nr -k 4 | head -5'
-
-# get top process eating cpu ##
-alias pscpu='ps aux | sort -nr -k 3 | head -5'
-
 # .git
 alias init='git init -b main'
 alias gst='git status'
@@ -63,46 +48,63 @@ alias gb='git branch -a'
 alias gco='git checkout'
 alias gmain="git checkout main"
 alias gcob='git checkout -b'
-alias glog='git log'
+alias glog='git log --graph'
 alias gac='git add . && git commit -m'
 
 # general
 alias f='zi'
 alias l='lsd -alh --group-directories-first'
 alias fzf='fzf -e --preview="bat --color=always {}" --preview-window "~3"'
-alias mysql='/usr/local/mysql/bin/mysql'
+alias python="python3"
+alias bsource="source ~/.bashrc"
+alias vsource="source ~/.vim/vimrc"
+alias zsource="source ~/.config/zsh/.zshrc"
 alias address='ipconfig getifaddr en0'
+ alias path="echo $path | tr ' ' '\n'"
+alias ports="lsof -i -P"
+alias rsync="rsync -rPavh"
+alias ..="cd .."
 
-# exports
-HISTFILE=~/.zsh_history
+# history
 HISTSIZE=100000
 SAVEHIST=100000
-export PATH=$PATH:"$HOME/.local/bin"
-export PATH=$PATH:"$HOME/.cargo/bin"
-export PATH=$PATH:"$HOME/.config"
-export PATH=$PATH:"/opt/homebrew/bin/mongod"
-export PATH=$PATH:"/opt/homebrew/opt/postgresql@15/bin"
-export PATH=$PATH:"/usr/local/mysql/bin/mysql"
+HISTCONTROL=ignoreboth
+HISTFILE=~/.cache/.zsh_history
+
+# path
+path=(
+    $path
+    $HOME/.local/bin
+    $HOME/.cargo/bin
+    $HOME/.config
+    /opt/homebrew/bin/mongod
+    /opt/homebrew/opt/postgresql@15/bin
+    /usr/local/mysql/bin/mysql
+    /opt/homebrew/bin/python3
+)
+
+typeset -U path #remove dupes
+export path
+
+# export CDPATH="$HOME/.config:$HOME/.vim:$HOME/Projects/websites:$HOME/School/current/database:$HOME/School/current/legal:$HOME/School/current/management:$HOME/School/current/multimedia"
+ export CDPATH="$HOME/.config:$HOME/.vim:$HOME/Projects/websites:$HOME/School/current/database:$HOME/School/current/legal:$HOME/School/current/management:$HOME/School/current/multimedia"
 
 # XDG paths
 export XDG_CONFIG_HOME=$HOME/.config
 export XDG_CACHE_HOME=$HOME/.cache
 export XDG_DATA_HOME=$HOME/.local/share
 
-export CDPATH=.:$HOME:$HOME/.config:$HOME/.config/zsh:$HOME/.config/vim:$HOME/Desktop:$HOME/Projects/websites
-
 
 ### ----------- PROMPT BEGIN ------------ ###
 
 # enable only git 
- zstyle ':vcs_info:*' enable git 
+zstyle ':vcs_info:*' enable git 
 
 # setup a hook that runs before every prompt. 
 precmd_vcs_info() { vcs_info }
 precmd_functions+=( precmd_vcs_info )
 setopt prompt_subst
 
-# add a function to check for untracked files in the directory.
 # from https://github.com/zsh-users/zsh/blob/master/Misc/vcs_info-examples
 zstyle ':vcs_info:git*+set-message:*' hooks git-untracked
  
@@ -132,5 +134,3 @@ PROMPT+="\$vcs_info_msg_0_ "
 
 neofetch
 
-# uncomment function to check performance
-  # zprof

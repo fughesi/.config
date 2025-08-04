@@ -21,3 +21,7 @@ man man
 exit
 /Library/PostgreSQL/16/scripts/runpsql.sh; exit
 /Library/PostgreSQL/16/scripts/runpsql.sh; exit
+/Library/PostgreSQL/16/scripts/runpsql.sh; exit
+/Users/fughesi/Desktop/pip_install/bin/pip3 ; exit;
+l
+vim .bashrc

@@ -25,5 +25,3 @@ exit
 /Users/fughesi/Desktop/pip_install/bin/pip3 ; exit;
 l
 vim .bashrc
-l
-tmux
