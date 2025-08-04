@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "coc-snippets": ">=3.1.10",
+    "coc-snippets": ">=3.3.2",
     "coc-pairs": ">=1.4.2",
     "coc-tsserver": ">=2.2.0",
     "coc-emmet": ">=1.1.6",
@@ -8,7 +8,7 @@
     "coc-phpls": ">=2.2.4",
     "coc-diagnostic": ">=0.24.1",
     "coc-git": ">=2.7.0",
-    "coc-markdownlint": ">=1.34.0",
+    "coc-markdownlint": ">=1.36.0",
     "coc-prettier": ">=9.3.2",
     "coc-css": ">=2.1.0",
     "coc-html-css-support": ">=0.5.3",
@@ -18,6 +18,11 @@
     "coc-svg": ">=0.0.13",
     "coc-highlight": ">=2.0.4",
     "coc-glint": ">=1.0.4",
-    "coc-python": ">=1.2.13"
-  }
+    "coc-python": ">=1.2.13",
+    "@yaegassy/coc-nginx": ">=0.4.1",
+    "coc-json": ">=1.9.2",
+    "coc-pyright": ">=1.1.390",
+    "coc-clangd": ">=0.32.0"
+  },
+  "lastUpdate": 1741238587635
 }
