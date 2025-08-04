@@ -5,7 +5,9 @@ eval "$(zoxide init zsh)"
 
 source <(fzf --zsh)
 source "$ZDOTDIR/zsh-functions"
-source "$HOME/bin"
+
+# get all scripts from bin folder && source
+for scripts in $HOME/bin/*.sh; do [[ -f "$scripts" ]] && source "$scripts"; done
 
 # options
 unsetopt BEEP # no beeping
@@ -52,6 +54,9 @@ alias gcob='git checkout -b'
 alias glog='git log --graph'
 alias gac='git add . && git commit -m'
 
+# file extensions to open in vim
+alias -s {md,html,css,js,json,rs,txt,yml,sh}=vim
+
 # general
 alias f='zi'
 alias l='lsd -alh --group-directories-first'
@@ -95,5 +100,10 @@ export XDG_CONFIG_HOME=$HOME/.config
 export XDG_CACHE_HOME=$HOME/.cache
 export XDG_DATA_HOME=$HOME/.local/share
 
-neofetch
+# defaults
+export VISUAL=vim
+export EDITOR=vim
+export BROWSER="brave"
+
+# neofetch
 
