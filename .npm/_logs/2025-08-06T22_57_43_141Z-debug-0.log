@@ -1,0 +1,425 @@
+0 verbose cli /opt/homebrew/Cellar/node/24.5.0/bin/node /opt/homebrew/bin/npm
+1 info using npm@11.5.1
+2 info using node@v24.5.0
+3 silly config load:file:/opt/homebrew/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/fughesi/Desktop/docker-node-mongo/.npmrc
+5 silly config load:file:/Users/fughesi/.npmrc
+6 silly config load:file:/opt/homebrew/etc/npmrc
+7 verbose title npm i
+8 verbose argv "i"
+9 verbose logfile logs-max:10 dir:/Users/fughesi/.npm/_logs/2025-08-06T22_57_43_141Z-
+10 verbose logfile /Users/fughesi/.npm/_logs/2025-08-06T22_57_43_141Z-debug-0.log
+11 silly logfile start cleaning logs, removing 1 files
+12 silly packumentCache heap:4496293888 maxSize:1124073472 maxEntrySize:562036736
+13 silly logfile done cleaning log files
+14 silly idealTree buildDeps
+15 silly reify moves {}
+16 silly audit bulk request {
+16 silly audit   accepts: [ '1.3.5' ],
+16 silly audit   'array-flatten': [ '1.1.1' ],
+16 silly audit   async: [ '2.6.1' ],
+16 silly audit   bluebird: [ '3.5.1' ],
+16 silly audit   bson: [ '1.0.9' ],
+16 silly audit   bytes: [ '3.0.0' ],
+16 silly audit   'content-disposition': [ '0.5.2' ],
+16 silly audit   'content-type': [ '1.0.4' ],
+16 silly audit   cookie: [ '0.3.1' ],
+16 silly audit   'cookie-signature': [ '1.0.6' ],
+16 silly audit   debug: [ '2.6.9', '3.1.0' ],
+16 silly audit   depd: [ '1.1.2', '1.1.1' ],
+16 silly audit   destroy: [ '1.0.4' ],
+16 silly audit   'ee-first': [ '1.1.1' ],
+16 silly audit   ejs: [ '2.6.1' ],
+16 silly audit   encodeurl: [ '1.0.2' ],
+16 silly audit   'escape-html': [ '1.0.3' ],
+16 silly audit   etag: [ '1.8.1' ],
+16 silly audit   express: [ '4.16.3' ],
+16 silly audit   'body-parser': [ '1.18.2' ],
+16 silly audit   'iconv-lite': [ '0.4.19' ],
+16 silly audit   qs: [ '6.5.1' ],
+16 silly audit   'raw-body': [ '2.3.2' ],
+16 silly audit   'http-errors': [ '1.6.2', '1.6.3' ],
+16 silly audit   setprototypeof: [ '1.0.3', '1.1.0' ],
+16 silly audit   statuses: [ '1.4.0', '1.5.0' ],
+16 silly audit   finalhandler: [ '1.1.1' ],
+16 silly audit   forwarded: [ '0.1.2' ],
+16 silly audit   fresh: [ '0.5.2' ],
+16 silly audit   inherits: [ '2.0.3' ],
+16 silly audit   'ipaddr.js': [ '1.8.0' ],
+16 silly audit   kareem: [ '2.2.1' ],
+16 silly audit   lodash: [ '4.17.19' ],
+16 silly audit   'lodash.get': [ '4.4.2' ],
+16 silly audit   'media-typer': [ '0.3.0' ],
+16 silly audit   'merge-descriptors': [ '1.0.1' ],
+16 silly audit   methods: [ '1.1.2' ],
+16 silly audit   mime: [ '1.4.1' ],
+16 silly audit   'mime-db': [ '1.35.0' ],
+16 silly audit   'mime-types': [ '2.1.19' ],
+16 silly audit   mongodb: [ '3.1.1' ],
+16 silly audit   'mongodb-core': [ '3.1.0' ],
+16 silly audit   mongoose: [ '5.2.8' ],
+16 silly audit   'mongoose-legacy-pluralize': [ '1.0.2' ],
+16 silly audit   'safe-buffer': [ '5.1.2', '5.1.1' ],
+16 silly audit   mpath: [ '0.4.1' ],
+16 silly audit   mquery: [ '3.1.2' ],
+16 silly audit   ms: [ '2.0.0' ],
+16 silly audit   negotiator: [ '0.6.1' ],
+16 silly audit   'on-finished': [ '2.3.0' ],
+16 silly audit   parseurl: [ '1.3.2' ],
+16 silly audit   'path-to-regexp': [ '0.1.7' ],
+16 silly audit   'proxy-addr': [ '2.0.4' ],
+16 silly audit   'range-parser': [ '1.2.0' ],
+16 silly audit   'regexp-clone': [ '0.0.1' ],
+16 silly audit   require_optional: [ '1.0.1' ],
+16 silly audit   'resolve-from': [ '2.0.0' ],
+16 silly audit   saslprep: [ '1.0.1' ],
+16 silly audit   semver: [ '5.5.0' ],
+16 silly audit   send: [ '0.16.2' ],
+16 silly audit   'serve-static': [ '1.13.2' ],
+16 silly audit   sliced: [ '1.0.1' ],
+16 silly audit   'type-is': [ '1.6.16' ],
+16 silly audit   unpipe: [ '1.0.0' ],
+16 silly audit   'utils-merge': [ '1.0.1' ],
+16 silly audit   vary: [ '1.1.2' ]
+16 silly audit }
+17 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 397ms
+18 silly audit report {
+18 silly audit report   async: [
+18 silly audit report     {
+18 silly audit report       id: 1097691,
+18 silly audit report       url: 'https://github.com/advisories/GHSA-fwr7-v2mv-hh25',
+18 silly audit report       title: 'Prototype Pollution in async',
+18 silly audit report       severity: 'high',
+18 silly audit report       vulnerable_versions: '>=2.0.0 <2.6.4',
+18 silly audit report       cwe: [Array],
+18 silly audit report       cvss: [Object]
+18 silly audit report     }
+18 silly audit report   ],
+18 silly audit report   bson: [
+18 silly audit report     {
+18 silly audit report       id: 1102316,
+18 silly audit report       url: 'https://github.com/advisories/GHSA-v8w9-2789-6hhr',
+18 silly audit report       title: 'Deserialization of Untrusted Data in bson',
+18 silly audit report       severity: 'critical',
+18 silly audit report       vulnerable_versions: '<1.1.4',
+18 silly audit report       cwe: [Array],
+18 silly audit report       cvss: [Object]
+18 silly audit report     },
+18 silly audit report     {
+18 silly audit report       id: 1092294,
+18 silly audit report       url: 'https://github.com/advisories/GHSA-4jwp-vfvf-657p',
+18 silly audit report       title: 'Deserialization of Untrusted Data in bson',
+18 silly audit report       severity: 'moderate',
+18 silly audit report       vulnerable_versions: '<1.1.4',
+18 silly audit report       cwe: [Array],
+18 silly audit report       cvss: [Object]
+18 silly audit report     }
+18 silly audit report   ],
+18 silly audit report   cookie: [
+18 silly audit report     {
+18 silly audit report       id: 1103907,
+18 silly audit report       url: 'https://github.com/advisories/GHSA-pxg6-pf52-xh8x',
+18 silly audit report       title: 'cookie accepts cookie name, path, and domain with out of bounds characters',
+18 silly audit report       severity: 'low',
+18 silly audit report       vulnerable_versions: '<0.7.0',
+18 silly audit report       cwe: [Array],
+18 silly audit report       cvss: [Object]
+18 silly audit report     }
+18 silly audit report   ],
+18 silly audit report   ejs: [
+18 silly audit report     {
+18 silly audit report       id: 1089270,
+18 silly audit report       url: 'https://github.com/advisories/GHSA-phwq-j96m-2c2q',
+18 silly audit report       title: 'ejs template injection vulnerability',
+18 silly audit report       severity: 'critical',
+18 silly audit report       vulnerable_versions: '<3.1.7',
+18 silly audit report       cwe: [Array],
+18 silly audit report       cvss: [Object]
+18 silly audit report     },
+18 silly audit report     {
+18 silly audit report       id: 1098366,
+18 silly audit report       url: 'https://github.com/advisories/GHSA-ghr5-ch3p-vcr6',
+18 silly audit report       title: 'ejs lacks certain pollution protection',
+18 silly audit report       severity: 'moderate',
+18 silly audit report       vulnerable_versions: '<3.1.10',
+18 silly audit report       cwe: [Array],
+18 silly audit report       cvss: [Object]
+18 silly audit report     }
+18 silly audit report   ],
+18 silly audit report   express: [
+18 silly audit report     {
+18 silly audit report       id: 1100530,
+18 silly audit report       url: 'https://github.com/advisories/GHSA-qw6h-vgh9-j6wx',
+18 silly audit report       title: 'express vulnerable to XSS via response.redirect()',
+18 silly audit report       severity: 'low',
+18 silly audit report       vulnerable_versions: '<4.20.0',
+18 silly audit report       cwe: [Array],
+18 silly audit report       cvss: [Object]
+18 silly audit report     },
+18 silly audit report     {
+18 silly audit report       id: 1096820,
+18 silly audit report       url: 'https://github.com/advisories/GHSA-rv95-896h-c2vc',
+18 silly audit report       title: 'Express.js Open Redirect in malformed URLs',
+18 silly audit report       severity: 'moderate',
+18 silly audit report       vulnerable_versions: '<4.19.2',
+18 silly audit report       cwe: [Array],
+18 silly audit report       cvss: [Object]
+18 silly audit report     }
+18 silly audit report   ],
+18 silly audit report   'body-parser': [
+18 silly audit report     {
+18 silly audit report       id: 1099520,
+18 silly audit report       url: 'https://github.com/advisories/GHSA-qwcr-r2fm-qrc7',
+18 silly audit report       title: 'body-parser vulnerable to denial of service when url encoding is enabled',
+18 silly audit report       severity: 'high',
+18 silly audit report       vulnerable_versions: '<1.20.3',
+18 silly audit report       cwe: [Array],
+18 silly audit report       cvss: [Object]
+18 silly audit report     }
+18 silly audit report   ],
+18 silly audit report   qs: [
+18 silly audit report     {
+18 silly audit report       id: 1104118,
+18 silly audit report       url: 'https://github.com/advisories/GHSA-hrpp-h998-j3pp',
+18 silly audit report       title: 'qs vulnerable to Prototype Pollution',
+18 silly audit report       severity: 'high',
+18 silly audit report       vulnerable_versions: '>=6.5.0 <6.5.3',
+18 silly audit report       cwe: [Array],
+18 silly audit report       cvss: [Object]
+18 silly audit report     }
+18 silly audit report   ],
+18 silly audit report   lodash: [
+18 silly audit report     {
+18 silly audit report       id: 1096996,
+18 silly audit report       url: 'https://github.com/advisories/GHSA-35jh-r3h4-6jhm',
+18 silly audit report       title: 'Command Injection in lodash',
+18 silly audit report       severity: 'high',
+18 silly audit report       vulnerable_versions: '<4.17.21',
+18 silly audit report       cwe: [Array],
+18 silly audit report       cvss: [Object]
+18 silly audit report     },
+18 silly audit report     {
+18 silly audit report       id: 1094500,
+18 silly audit report       url: 'https://github.com/advisories/GHSA-29mw-wpgm-hmr9',
+18 silly audit report       title: 'Regular Expression Denial of Service (ReDoS) in lodash',
+18 silly audit report       severity: 'moderate',
+18 silly audit report       vulnerable_versions: '<4.17.21',
+18 silly audit report       cwe: [Array],
+18 silly audit report       cvss: [Object]
+18 silly audit report     }
+18 silly audit report   ],
+18 silly audit report   mongodb: [
+18 silly audit report     {
+18 silly audit report       id: 1086754,
+18 silly audit report       url: 'https://github.com/advisories/GHSA-mh5c-679w-hh4r',
+18 silly audit report       title: 'Denial of Service in mongodb',
+18 silly audit report       severity: 'high',
+18 silly audit report       vulnerable_versions: '<3.1.13',
+18 silly audit report       cwe: [],
+18 silly audit report       cvss: [Object]
+18 silly audit report     }
+18 silly audit report   ],
+18 silly audit report   mongoose: [
+18 silly audit report     {
+18 silly audit report       id: 1101061,
+18 silly audit report       url: 'https://github.com/advisories/GHSA-m7xq-9374-9rvx',
+18 silly audit report       title: 'Mongoose search injection vulnerability',
+18 silly audit report       severity: 'high',
+18 silly audit report       vulnerable_versions: '<6.13.5',
+18 silly audit report       cwe: [Array],
+18 silly audit report       cvss: [Object]
+18 silly audit report     },
+18 silly audit report     {
+18 silly audit report       id: 1101838,
+18 silly audit report       url: 'https://github.com/advisories/GHSA-vg7j-7cwx-8wgw',
+18 silly audit report       title: 'Mongoose search injection vulnerability',
+18 silly audit report       severity: 'critical',
+18 silly audit report       vulnerable_versions: '<6.13.6',
+18 silly audit report       cwe: [Array],
+18 silly audit report       cvss: [Object]
+18 silly audit report     },
+18 silly audit report     {
+18 silly audit report       id: 1095078,
+18 silly audit report       url: 'https://github.com/advisories/GHSA-f825-f98c-gj3g',
+18 silly audit report       title: 'automattic/mongoose vulnerable to Prototype pollution via Schema.path',
+18 silly audit report       severity: 'high',
+18 silly audit report       vulnerable_versions: '<5.13.15',
+18 silly audit report       cwe: [Array],
+18 silly audit report       cvss: [Object]
+18 silly audit report     },
+18 silly audit report     {
+18 silly audit report       id: 1095080,
+18 silly audit report       url: 'https://github.com/advisories/GHSA-9m93-w8w6-76hh',
+18 silly audit report       title: 'Mongoose Prototype Pollution vulnerability',
+18 silly audit report       severity: 'critical',
+18 silly audit report       vulnerable_versions: '<5.13.20',
+18 silly audit report       cwe: [Array],
+18 silly audit report       cvss: [Object]
+18 silly audit report     },
+18 silly audit report     {
+18 silly audit report       id: 1097158,
+18 silly audit report       url: 'https://github.com/advisories/GHSA-h8hf-x3f4-xwgp',
+18 silly audit report       title: 'Mongoose Vulnerable to Prototype Pollution in Schema Object',
+18 silly audit report       severity: 'critical',
+18 silly audit report       vulnerable_versions: '<5.13.15',
+18 silly audit report       cwe: [Array],
+18 silly audit report       cvss: [Object]
+18 silly audit report     },
+18 silly audit report     {
+18 silly audit report       id: 1095077,
+18 silly audit report       url: 'https://github.com/advisories/GHSA-8687-vv9j-hgph',
+18 silly audit report       title: 'Improper Input Validation in Automattic Mongoose',
+18 silly audit report       severity: 'critical',
+18 silly audit report       vulnerable_versions: '>=5.0.0 <5.7.5',
+18 silly audit report       cwe: [Array],
+18 silly audit report       cvss: [Object]
+18 silly audit report     }
+18 silly audit report   ],
+18 silly audit report   mpath: [
+18 silly audit report     {
+18 silly audit report       id: 1095075,
+18 silly audit report       url: 'https://github.com/advisories/GHSA-p92x-r36w-9395',
+18 silly audit report       title: 'Type confusion in mpath',
+18 silly audit report       severity: 'moderate',
+18 silly audit report       vulnerable_versions: '<0.8.4',
+18 silly audit report       cwe: [Array],
+18 silly audit report       cvss: [Object]
+18 silly audit report     },
+18 silly audit report     {
+18 silly audit report       id: 1093443,
+18 silly audit report       url: 'https://github.com/advisories/GHSA-h466-j336-74wx',
+18 silly audit report       title: 'Prototype Pollution in mpath',
+18 silly audit report       severity: 'high',
+18 silly audit report       vulnerable_versions: '<0.5.1',
+18 silly audit report       cwe: [Array],
+18 silly audit report       cvss: [Object]
+18 silly audit report     }
+18 silly audit report   ],
+18 silly audit report   mquery: [
+18 silly audit report     {
+18 silly audit report       id: 1086439,
+18 silly audit report       url: 'https://github.com/advisories/GHSA-45q2-34rf-mr94',
+18 silly audit report       title: 'Code Injection in mquery',
+18 silly audit report       severity: 'moderate',
+18 silly audit report       vulnerable_versions: '<3.2.3',
+18 silly audit report       cwe: [Array],
+18 silly audit report       cvss: [Object]
+18 silly audit report     }
+18 silly audit report   ],
+18 silly audit report   'path-to-regexp': [
+18 silly audit report     {
+18 silly audit report       id: 1101850,
+18 silly audit report       url: 'https://github.com/advisories/GHSA-9wv6-86v2-598j',
+18 silly audit report       title: 'path-to-regexp outputs backtracking regular expressions',
+18 silly audit report       severity: 'high',
+18 silly audit report       vulnerable_versions: '<0.1.10',
+18 silly audit report       cwe: [Array],
+18 silly audit report       cvss: [Object]
+18 silly audit report     },
+18 silly audit report     {
+18 silly audit report       id: 1105199,
+18 silly audit report       url: 'https://github.com/advisories/GHSA-rhx6-c78j-4q9w',
+18 silly audit report       title: 'path-to-regexp contains a ReDoS',
+18 silly audit report       severity: 'high',
+18 silly audit report       vulnerable_versions: '<0.1.12',
+18 silly audit report       cwe: [Array],
+18 silly audit report       cvss: [Object]
+18 silly audit report     }
+18 silly audit report   ],
+18 silly audit report   semver: [
+18 silly audit report     {
+18 silly audit report       id: 1101089,
+18 silly audit report       url: 'https://github.com/advisories/GHSA-c2qf-rxjj-qqgw',
+18 silly audit report       title: 'semver vulnerable to Regular Expression Denial of Service',
+18 silly audit report       severity: 'high',
+18 silly audit report       vulnerable_versions: '<5.7.2',
+18 silly audit report       cwe: [Array],
+18 silly audit report       cvss: [Object]
+18 silly audit report     }
+18 silly audit report   ],
+18 silly audit report   send: [
+18 silly audit report     {
+18 silly audit report       id: 1100526,
+18 silly audit report       url: 'https://github.com/advisories/GHSA-m6fv-jmcg-4jfg',
+18 silly audit report       title: 'send vulnerable to template injection that can lead to XSS',
+18 silly audit report       severity: 'low',
+18 silly audit report       vulnerable_versions: '<0.19.0',
+18 silly audit report       cwe: [Array],
+18 silly audit report       cvss: [Object]
+18 silly audit report     }
+18 silly audit report   ],
+18 silly audit report   'serve-static': [
+18 silly audit report     {
+18 silly audit report       id: 1100528,
+18 silly audit report       url: 'https://github.com/advisories/GHSA-cm22-4g7w-348p',
+18 silly audit report       title: 'serve-static vulnerable to template injection that can lead to XSS',
+18 silly audit report       severity: 'low',
+18 silly audit report       vulnerable_versions: '<1.16.0',
+18 silly audit report       cwe: [Array],
+18 silly audit report       cvss: [Object]
+18 silly audit report     }
+18 silly audit report   ]
+18 silly audit report }
+19 silly packumentCache corgi:https://registry.npmjs.org/async cache-miss
+20 silly packumentCache corgi:https://registry.npmjs.org/bson cache-miss
+21 silly packumentCache corgi:https://registry.npmjs.org/cookie cache-miss
+22 silly packumentCache corgi:https://registry.npmjs.org/ejs cache-miss
+23 silly packumentCache corgi:https://registry.npmjs.org/express cache-miss
+24 silly packumentCache corgi:https://registry.npmjs.org/body-parser cache-miss
+25 silly packumentCache corgi:https://registry.npmjs.org/qs cache-miss
+26 silly packumentCache corgi:https://registry.npmjs.org/lodash cache-miss
+27 silly packumentCache corgi:https://registry.npmjs.org/mongodb cache-miss
+28 silly packumentCache corgi:https://registry.npmjs.org/mongoose cache-miss
+29 silly packumentCache corgi:https://registry.npmjs.org/mpath cache-miss
+30 silly packumentCache corgi:https://registry.npmjs.org/mquery cache-miss
+31 silly packumentCache corgi:https://registry.npmjs.org/path-to-regexp cache-miss
+32 silly packumentCache corgi:https://registry.npmjs.org/semver cache-miss
+33 silly packumentCache corgi:https://registry.npmjs.org/send cache-miss
+34 silly packumentCache corgi:https://registry.npmjs.org/serve-static cache-miss
+35 http fetch GET 200 https://registry.npmjs.org/bson 139ms (cache revalidated)
+36 silly packumentCache corgi:https://registry.npmjs.org/bson set size:254899 disposed:false
+37 http fetch GET 200 https://registry.npmjs.org/async 212ms (cache revalidated)
+38 silly packumentCache corgi:https://registry.npmjs.org/async set size:98095 disposed:false
+39 http fetch GET 200 https://registry.npmjs.org/serve-static 219ms (cache revalidated)
+40 silly packumentCache corgi:https://registry.npmjs.org/serve-static set size:56254 disposed:false
+41 http fetch GET 200 https://registry.npmjs.org/semver 256ms (cache revalidated)
+42 silly packumentCache corgi:https://registry.npmjs.org/semver set size:94787 disposed:false
+43 http fetch GET 200 https://registry.npmjs.org/mquery 267ms (cache revalidated)
+44 silly packumentCache corgi:https://registry.npmjs.org/mquery set size:61414 disposed:false
+45 http fetch GET 200 https://registry.npmjs.org/lodash 269ms (cache revalidated)
+46 silly packumentCache corgi:https://registry.npmjs.org/lodash set size:67972 disposed:false
+47 http fetch GET 200 https://registry.npmjs.org/qs 270ms (cache revalidated)
+48 silly packumentCache corgi:https://registry.npmjs.org/qs set size:109860 disposed:false
+49 http fetch GET 200 https://registry.npmjs.org/cookie 276ms (cache revalidated)
+50 silly packumentCache corgi:https://registry.npmjs.org/cookie set size:22175 disposed:false
+51 http fetch GET 200 https://registry.npmjs.org/ejs 277ms (cache revalidated)
+52 silly packumentCache corgi:https://registry.npmjs.org/ejs set size:64208 disposed:false
+53 http fetch GET 200 https://registry.npmjs.org/mongodb 278ms (cache revalidated)
+54 silly packumentCache corgi:https://registry.npmjs.org/mongodb set size:1313221 disposed:false
+55 http fetch GET 200 https://registry.npmjs.org/send 285ms (cache revalidated)
+56 silly packumentCache corgi:https://registry.npmjs.org/send set size:60926 disposed:false
+57 http fetch GET 200 https://registry.npmjs.org/mpath 290ms (cache revalidated)
+58 silly packumentCache corgi:https://registry.npmjs.org/mpath set size:20854 disposed:false
+59 http fetch GET 200 https://registry.npmjs.org/body-parser 291ms (cache revalidated)
+60 silly packumentCache corgi:https://registry.npmjs.org/body-parser set size:74404 disposed:false
+61 http fetch GET 200 https://registry.npmjs.org/path-to-regexp 291ms (cache revalidated)
+62 silly packumentCache corgi:https://registry.npmjs.org/path-to-regexp set size:62557 disposed:false
+63 http fetch GET 200 https://registry.npmjs.org/mongoose 294ms (cache revalidated)
+64 silly packumentCache corgi:https://registry.npmjs.org/mongoose set size:1519452 disposed:false
+65 http fetch GET 200 https://registry.npmjs.org/express 315ms (cache revalidated)
+66 silly packumentCache corgi:https://registry.npmjs.org/express set size:331341 disposed:false
+67 silly packumentCache corgi:https://registry.npmjs.org/mongodb-core cache-miss
+68 http fetch GET 200 https://registry.npmjs.org/mongodb-core 62ms (cache revalidated)
+69 silly packumentCache corgi:https://registry.npmjs.org/mongodb-core set size:174566 disposed:false
+70 silly packumentCache corgi:https://registry.npmjs.org/mongoose-legacy-pluralize cache-miss
+71 http fetch GET 200 https://registry.npmjs.org/mongoose-legacy-pluralize 60ms (cache revalidated)
+72 silly packumentCache corgi:https://registry.npmjs.org/mongoose-legacy-pluralize set size:3349 disposed:false
+73 silly packumentCache corgi:https://registry.npmjs.org/require_optional cache-miss
+74 http fetch GET 200 https://registry.npmjs.org/require_optional 66ms (cache revalidated)
+75 silly packumentCache corgi:https://registry.npmjs.org/require_optional set size:1391 disposed:false
+76 verbose cwd /Users/fughesi/Desktop/docker-node-mongo
+77 verbose os Darwin 24.6.0
+78 verbose node v24.5.0
+79 verbose npm  v11.5.1
+80 verbose exit 0
+81 info ok

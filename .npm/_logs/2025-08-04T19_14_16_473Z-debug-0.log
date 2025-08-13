@@ -1,0 +1,89 @@
+0 verbose cli /opt/homebrew/Cellar/node/23.10.0_1/bin/node /opt/homebrew/Cellar/node/23.10.0_1/bin/npm
+1 info using npm@10.9.2
+2 info using node@v23.10.0
+3 silly config load:file:/opt/homebrew/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/fughesi/.cache/typescript/5.8/.npmrc
+5 silly config load:file:/Users/fughesi/.npmrc
+6 silly config load:file:/opt/homebrew/etc/npmrc
+7 verbose title npm install @types/react@ts5.8 @types/react-dom@ts5.8
+8 verbose argv "install" "--ignore-scripts" "@types/react@ts5.8" "@types/react-dom@ts5.8" "--save-dev" "--user-agent" "typesInstaller/5.8.2"
+9 verbose logfile logs-max:10 dir:/Users/fughesi/.npm/_logs/2025-08-04T19_14_16_473Z-
+10 verbose logfile /Users/fughesi/.npm/_logs/2025-08-04T19_14_16_473Z-debug-0.log
+11 silly logfile start cleaning logs, removing 1 files
+12 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+13 silly logfile done cleaning log files
+14 silly packumentCache corgi:https://registry.npmjs.org/@types%2freact cache-miss
+15 silly packumentCache corgi:https://registry.npmjs.org/@types%2freact-dom cache-miss
+16 http fetch GET 200 https://registry.npmjs.org/@types%2freact-dom 289ms (cache updated)
+17 silly packumentCache corgi:https://registry.npmjs.org/@types%2freact-dom set size:undefined disposed:false
+18 http fetch GET 200 https://registry.npmjs.org/@types%2freact 363ms (cache updated)
+19 silly packumentCache corgi:https://registry.npmjs.org/@types%2freact set size:undefined disposed:false
+20 silly idealTree buildDeps
+21 silly fetch manifest @types/react@19.1.9
+22 silly packumentCache full:https://registry.npmjs.org/@types%2freact cache-miss
+23 http cache https://registry.npmjs.org/@types%2freact 8ms (cache hit)
+24 silly packumentCache full:https://registry.npmjs.org/@types%2freact set size:2417342 disposed:false
+25 silly fetch manifest @types/react-dom@19.1.7
+26 silly packumentCache full:https://registry.npmjs.org/@types%2freact-dom cache-miss
+27 http cache https://registry.npmjs.org/@types%2freact-dom 4ms (cache hit)
+28 silly packumentCache full:https://registry.npmjs.org/@types%2freact-dom set size:406522 disposed:false
+29 silly placeDep ROOT @types/react@19.1.9 REPLACE for:  want: 19.1.9
+30 silly placeDep ROOT @types/react-dom@19.1.7 REPLACE for:  want: 19.1.7
+31 silly reify mark retired [ '/Users/fughesi/.cache/typescript/5.8/node_modules/@types/react' ]
+32 silly reify mark retired [
+32 silly reify   '/Users/fughesi/.cache/typescript/5.8/node_modules/@types/react-dom'
+32 silly reify ]
+33 silly reify moves {
+33 silly reify   '/Users/fughesi/.cache/typescript/5.8/node_modules/@types/react': '/Users/fughesi/.cache/typescript/5.8/node_modules/@types/.react-8We8Ki7h',
+33 silly reify   '/Users/fughesi/.cache/typescript/5.8/node_modules/@types/react-dom': '/Users/fughesi/.cache/typescript/5.8/node_modules/@types/.react-dom-FaHtAGFj'
+33 silly reify }
+34 silly audit bulk request {
+34 silly audit   '@types/body': [ '5.1.4' ],
+34 silly audit   '@types/body-parser': [ '1.19.6' ],
+34 silly audit   '@types/connect': [ '3.4.38' ],
+34 silly audit   '@types/cors': [ '2.8.19' ],
+34 silly audit   '@types/express': [ '5.0.3' ],
+34 silly audit   '@types/express-serve-static-core': [ '5.0.7' ],
+34 silly audit   '@types/http-errors': [ '2.0.5' ],
+34 silly audit   '@types/jquery': [ '3.5.32' ],
+34 silly audit   '@types/less': [ '3.0.8' ],
+34 silly audit   '@types/mime': [ '1.3.5' ],
+34 silly audit   '@types/node': [ '24.0.15' ],
+34 silly audit   '@types/object-assign': [ '4.0.33' ],
+34 silly audit   '@types/pg': [ '8.15.5' ],
+34 silly audit   '@types/qs': [ '6.14.0' ],
+34 silly audit   '@types/range-parser': [ '1.2.7' ],
+34 silly audit   '@types/send': [ '0.17.5' ],
+34 silly audit   '@types/serve-static': [ '1.15.8' ],
+34 silly audit   '@types/sizzle': [ '2.3.9' ],
+34 silly audit   '@types/stylus': [ '0.48.43' ],
+34 silly audit   csstype: [ '3.1.3' ],
+34 silly audit   'pg-int8': [ '1.0.1' ],
+34 silly audit   'pg-protocol': [ '1.10.3' ],
+34 silly audit   'pg-types': [ '2.2.0' ],
+34 silly audit   'postgres-array': [ '2.0.0' ],
+34 silly audit   'postgres-bytea': [ '1.0.0' ],
+34 silly audit   'postgres-date': [ '1.0.7' ],
+34 silly audit   'postgres-interval': [ '1.2.0' ],
+34 silly audit   'types-registry': [ '0.1.732' ],
+34 silly audit   'undici-types': [ '7.8.0' ],
+34 silly audit   xtend: [ '4.0.2' ],
+34 silly audit   '@types/react': [ '19.1.9' ],
+34 silly audit   '@types/react-dom': [ '19.1.7' ]
+34 silly audit }
+35 http cache @types/react-dom@https://registry.npmjs.org/@types/react-dom/-/react-dom-19.1.7.tgz 0ms (cache hit)
+36 http cache @types/react@https://registry.npmjs.org/@types/react/-/react-19.1.9.tgz 0ms (cache hit)
+37 silly tarball no local data for @types/react-dom@https://registry.npmjs.org/@types/react-dom/-/react-dom-19.1.7.tgz. Extracting by manifest.
+38 silly tarball no local data for @types/react@https://registry.npmjs.org/@types/react/-/react-19.1.9.tgz. Extracting by manifest.
+39 http fetch GET 200 https://registry.npmjs.org/@types/react-dom/-/react-dom-19.1.7.tgz 81ms (cache miss)
+40 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 149ms
+41 silly audit report {}
+42 http fetch GET 200 https://registry.npmjs.org/@types/react/-/react-19.1.9.tgz 264ms (cache miss)
+43 silly CHANGE node_modules/@types/react-dom
+44 silly CHANGE node_modules/@types/react
+45 verbose cwd /Users/fughesi/.cache/typescript/5.8
+46 verbose os Darwin 24.5.0
+47 verbose node v23.10.0
+48 verbose npm  v10.9.2
+49 verbose exit 0
+50 info ok

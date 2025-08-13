@@ -1,0 +1,13 @@
+0 verbose cli /opt/homebrew/Cellar/node/23.10.0_1/bin/node /opt/homebrew/bin/npm
+1 info using npm@10.9.2
+2 info using node@v23.10.0
+3 silly config load:file:/opt/homebrew/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/fughesi/Desktop/veryAcadamy/client/.npmrc
+5 silly config load:file:/Users/fughesi/.npmrc
+6 silly config load:file:/opt/homebrew/etc/npmrc
+7 verbose title npm run start
+8 verbose argv "run" "start"
+9 verbose logfile logs-max:10 dir:/Users/fughesi/.npm/_logs/2025-08-04T19_30_24_854Z-
+10 verbose logfile /Users/fughesi/.npm/_logs/2025-08-04T19_30_24_854Z-debug-0.log
+11 silly logfile start cleaning logs, removing 1 files
+12 silly logfile done cleaning log files

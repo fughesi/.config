@@ -1,0 +1,79 @@
+0 verbose cli /opt/homebrew/Cellar/node/24.5.0/bin/node /opt/homebrew/Cellar/node/24.5.0/bin/npm
+1 info using npm@11.5.1
+2 info using node@v24.5.0
+3 silly config load:file:/opt/homebrew/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/fughesi/.cache/typescript/5.8/.npmrc
+5 silly config load:file:/Users/fughesi/.npmrc
+6 silly config load:file:/opt/homebrew/etc/npmrc
+7 verbose title npm install @types/ejs@ts5.8 @types/express@ts5.8
+8 verbose argv "install" "--ignore-scripts" "@types/ejs@ts5.8" "@types/express@ts5.8" "--save-dev" "--user-agent" "typesInstaller/5.8.2"
+9 verbose logfile logs-max:10 dir:/Users/fughesi/.npm/_logs/2025-08-06T23_00_33_551Z-
+10 verbose logfile /Users/fughesi/.npm/_logs/2025-08-06T23_00_33_551Z-debug-0.log
+11 silly logfile start cleaning logs, removing 1 files
+12 silly packumentCache heap:4496293888 maxSize:1124073472 maxEntrySize:562036736
+13 silly logfile done cleaning log files
+14 silly packumentCache corgi:https://registry.npmjs.org/@types%2fejs cache-miss
+15 silly packumentCache corgi:https://registry.npmjs.org/@types%2fexpress cache-miss
+16 http fetch GET 200 https://registry.npmjs.org/@types%2fexpress 256ms (cache revalidated)
+17 silly packumentCache corgi:https://registry.npmjs.org/@types%2fexpress set size:51126 disposed:false
+18 http fetch GET 200 https://registry.npmjs.org/@types%2fejs 296ms (cache miss)
+19 silly packumentCache corgi:https://registry.npmjs.org/@types%2fejs set size:undefined disposed:false
+20 silly idealTree buildDeps
+21 silly fetch manifest @types/express@5.0.3
+22 silly packumentCache full:https://registry.npmjs.org/@types%2fexpress cache-miss
+23 http fetch GET 200 https://registry.npmjs.org/@types%2fexpress 99ms (cache revalidated)
+24 silly packumentCache full:https://registry.npmjs.org/@types%2fexpress set size:102006 disposed:false
+25 silly fetch manifest @types/ejs@3.1.5
+26 silly packumentCache full:https://registry.npmjs.org/@types%2fejs cache-miss
+27 http fetch GET 200 https://registry.npmjs.org/@types%2fejs 101ms (cache miss)
+28 silly packumentCache full:https://registry.npmjs.org/@types%2fejs set size:undefined disposed:false
+29 silly placeDep ROOT @types/ejs@3.1.5 OK for:  want: 3.1.5
+30 silly placeDep ROOT @types/express@5.0.3 REPLACE for:  want: 5.0.3
+31 silly reify moves {}
+32 silly audit bulk request {
+32 silly audit   '@types/body': [ '5.1.4' ],
+32 silly audit   '@types/body-parser': [ '1.19.6' ],
+32 silly audit   '@types/connect': [ '3.4.38' ],
+32 silly audit   '@types/cors': [ '2.8.19' ],
+32 silly audit   '@types/express-serve-static-core': [ '5.0.7' ],
+32 silly audit   '@types/http-errors': [ '2.0.5' ],
+32 silly audit   '@types/jquery': [ '3.5.32' ],
+32 silly audit   '@types/less': [ '3.0.8' ],
+32 silly audit   '@types/mime': [ '1.3.5' ],
+32 silly audit   '@types/node': [ '24.0.15' ],
+32 silly audit   '@types/object-assign': [ '4.0.33' ],
+32 silly audit   '@types/pg': [ '8.15.5' ],
+32 silly audit   '@types/qs': [ '6.14.0' ],
+32 silly audit   '@types/range-parser': [ '1.2.7' ],
+32 silly audit   '@types/react': [ '19.1.9' ],
+32 silly audit   '@types/react-dom': [ '19.1.7' ],
+32 silly audit   '@types/send': [ '0.17.5' ],
+32 silly audit   '@types/serve-static': [ '1.15.8' ],
+32 silly audit   '@types/sizzle': [ '2.3.9' ],
+32 silly audit   '@types/stylus': [ '0.48.43' ],
+32 silly audit   csstype: [ '3.1.3' ],
+32 silly audit   'pg-int8': [ '1.0.1' ],
+32 silly audit   'pg-protocol': [ '1.10.3' ],
+32 silly audit   'pg-types': [ '2.2.0' ],
+32 silly audit   'postgres-array': [ '2.0.0' ],
+32 silly audit   'postgres-bytea': [ '1.0.0' ],
+32 silly audit   'postgres-date': [ '1.0.7' ],
+32 silly audit   'postgres-interval': [ '1.2.0' ],
+32 silly audit   'types-registry': [ '0.1.732' ],
+32 silly audit   'undici-types': [ '7.8.0' ],
+32 silly audit   xtend: [ '4.0.2' ],
+32 silly audit   '@types/ejs': [ '3.1.5' ],
+32 silly audit   '@types/express': [ '5.0.3' ]
+32 silly audit }
+33 http cache @types/ejs@https://registry.npmjs.org/@types/ejs/-/ejs-3.1.5.tgz 0ms (cache hit)
+34 silly tarball no local data for @types/ejs@https://registry.npmjs.org/@types/ejs/-/ejs-3.1.5.tgz. Extracting by manifest.
+35 http fetch GET 200 https://registry.npmjs.org/@types/ejs/-/ejs-3.1.5.tgz 104ms (cache miss)
+36 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 166ms
+37 silly audit report {}
+38 silly ADD node_modules/@types/ejs
+39 verbose cwd /Users/fughesi/.cache/typescript/5.8
+40 verbose os Darwin 24.6.0
+41 verbose node v24.5.0
+42 verbose npm  v11.5.1
+43 verbose exit 0
+44 info ok
