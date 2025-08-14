@@ -42,16 +42,12 @@ alias rm='rm -i'
 
 # .git
 alias init='git init -b main'
-alias gst='git status'
-alias gadd='git add .'
-alias gpull='git pull'
-alias gpush='git push'
-alias gdiff='git diff'
+alias gst='git status -bvu --show-stash'
 alias gb='git branch -a'
 alias gco='git checkout'
-alias gmain="git checkout main"
 alias gcob='git checkout -b'
-alias glog='git log --graph'
+alias glog='git log --oneline --graph --decorate --all'
+alias gmain="git checkout main"
 alias gac='git add . && git commit -m'
 
 # file extensions to open in vim
@@ -92,7 +88,6 @@ HISTSIZE=10000
 SAVEHIST=10000
 HISTCONTROL=ignoreboth
 HISTFILE="$XDG_STATE_HOME"/zsh/history
-LESSHISTFILE=" "
 
 # path
 path=(
@@ -113,10 +108,11 @@ export path
 export CDPATH="$HOME/.config:$HOME/.vim:$HOME/Projects/websites:$HOME/School/current/database:$HOME/School/current/legal:$HOME/School/current/management:$HOME/School/current/multimedia"
 
 # defaults
-export VISUAL=vim
 export EDITOR=vim
 export TERMINAL=tabby
 export BROWSER=brave
 
 neofetch
 
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

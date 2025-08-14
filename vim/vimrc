@@ -1,4 +1,4 @@
-colorscheme slate
+colorscheme sorbet
 
 call plug#begin('~/.config/vim/plugins')
   Plug 'jreybert/vimagit'
@@ -160,11 +160,11 @@ nnoremap + <C-a>
 nnoremap - <C-x>
 
 " window management
-nnoremap <c-e> :Lexplore<CR> 
-nnoremap <S-b> :bnext<CR>
-nnoremap <C-b> :bprevious<CR>
+nnoremap <c-e> :Lexplore<CR>
+nnoremap ] :bnext<CR>
+nnoremap [ :bprevious<CR>
 nnoremap bd :bd<CR>
-nnoremap bad :%bdelete<CR> 
+nnoremap bad :%bdelete<CR>
 
 nnoremap <silent> w<left> :vertical resize +20<cr>
 nnoremap <silent> w<right> :vertical resize -20<cr>
@@ -180,3 +180,4 @@ nnoremap <silent> gi <Plug>(coc-implementation)
 nnoremap <silent> gr <Plug>(coc-references)
 nnoremap <space>rn <Plug>(coc-rename)
 nnoremap <silent> <space>k :call CocActionAsync('doHover')<cr>
+nnoremap git :Magit<CR>
