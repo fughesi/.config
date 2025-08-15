@@ -115,4 +115,3 @@ export BROWSER=brave
 neofetch
 
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
